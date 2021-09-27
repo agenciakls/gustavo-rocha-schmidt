@@ -1,12 +1,12 @@
 /* Cores do Tema */
 // $corPrincipal: #ee2924;
-$corPrincipal: #da030b;
+$corPrincipal: #285565;
 $corPrincipalEscura: #c70007;
 $corPrincipalEscuraDark: #b90a06;
-$corSecundaria: #a0a0a0;
+$corSecundaria: #d58720;
 $corSecundariaEscura: #dcdcdc;
 $corBranco: #ffffff;
-$corText: #292929;
+$corText: #666666;
 $corGrayPrincipal: #ededed;
 
 /* Tamanho das Telas */
@@ -31,28 +31,11 @@ $xsTextMenu: 20px;
 
 @import 'index';
 @import 'index-banner';
-@import 'index-brands';
-@import 'index-market';
 @import 'index-news';
-@import 'index-offers';
-@import 'index-projects';
-@import 'index-services';
-@import 'index-signature';
-@import 'index-socials';
 @import 'index-tips';
 
 @import 'page-biography';
 @import 'page-contact';
-@import 'page-clients';
-@import 'page-news';
-@import 'page-offers';
-@import 'page-projects';
-@import 'page-services';
-@import 'page-market';
-@import 'page-stores';
-@import 'page-promotions';
-@import 'page-specials';
-@import 'page-app';
 
 @import 'cookie';
 
