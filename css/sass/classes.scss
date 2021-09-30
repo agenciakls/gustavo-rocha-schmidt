@@ -26,9 +26,33 @@ h1, h2, h3, h4, h5, h6 {
 		color: $corPrincipal;
 	}
 }
-// h1 {  }
-h2 { font-size: 35px; padding: 25px 0px; color: $corPrincipal; }
+
+.pre-title {
+    font-size: 1.2em;
+    color: $corSecundaria;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h2 { font-size: 35px; color: $corPrincipal; }
+h3 {
+    color: $corPrincipal;
+    font-size: 2em;
+    font-weight: 800;
+}
+h4 {
+    font-size: 1.5em;
+    margin: 15px 0px;
+    color: #285565;
+}
 .content-text { color: $corText; }
+hr.line {
+    width: 50px;
+    border: solid 2px $corSecundaria;
+    opacity: 1;
+    &.text-center {
+        display: block;
+    }
+}
 
 /* ELEMENTOS */
 ul { list-style-type: none; padding-inline-start: 0px; }
@@ -40,43 +64,56 @@ img { max-width: 100%; }
     width: 100%;
     padding: 12px 15px;
     margin-bottom: 10px;
-    border: none;
     font-size: 16px;
     font-weight: 500;
+    background-color: $corBranco !important;
     color: $corPrincipal;
-    background-color: #efefef;
-    // border: solid 1px $corPrincipal;
-    border-radius: 30px !important;
+    background-color: transparent;
+    border-radius: 5px !important;
     &::placeholder {
         color: #585858 !important;
     }
 }
 input[type=text], input[type=email], input[type=tel], select, textarea { -webkit-appearance: none; }
-textarea { border-radius: 20px !important; }
 input:focus, textarea:focus, button:focus { outline: none !important; }
-input[type=button], input[type=submit], input[type=reset], button {
-    display: inline-block;
+input[type=button], input[type=submit], input[type=reset], button, .button {
+    display: block;
     background-color: $corPrincipal;
-    border: none;
-    margin: 5px;
-    padding: 10px 20px;
     color: $corBranco;
+    border: none;
+    margin: 20px 5px;
+    padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1em;
     cursor: pointer;
     transition: ease 0.3s all;
-    border-radius: 30px;
+    border-radius: 5px;
+    &.button-out {
+        background-color: transparent;
+        color: $corPrincipal;
+        border: solid 1px $corPrincipal;
+        &:hover {
+            background-color: $corPrincipal;
+            color: $corBranco;
+        }
+    }
     &:hover {
         background-color: $corPrincipalEscura;
     }
-    &.white {
-        background-color: transparent;
-        color: white;
-        border: solid 2px white;
+    &.secundary {
+        background-color: $corSecundaria;
+        &.button-out {
+            background-color: transparent;
+            color: $corSecundaria;
+            border: solid 1px $corSecundaria;
+            &:hover {
+                background-color: $corSecundaria;
+                color: $corBranco;
+            }
+        }
         &:hover {
-            color: $corPrincipal;
-            background-color: white;
+            background-color: $corSecundariaEscura;
         }
     }
 }

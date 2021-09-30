@@ -2,7 +2,7 @@
 function wp_custom_breadcrumbs() {
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
     // $delimiter = '&raquo;'; // delimiter between crumbs
-    $delimiter = '<i class="fa fa-angle-double-right"></i>';
+    $delimiter = '/';
     $home = 'Home'; // text for the 'Home' link
     $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
     $before = '<span class="current">'; // tag before the current crumb
@@ -14,7 +14,7 @@ function wp_custom_breadcrumbs() {
 
     if (is_home() || is_front_page()) {
 
-        if ($showOnHome == 1) echo '<div id="crumbs"><a href="' . $homeLink . '">' . $home . '</a></div>';
+        if ($showOnHome == 1) echo '<div id="crumbs" class="crumbs"><a href="' . $homeLink . '">' . $home . '</a></div>';
 
     }
     else {

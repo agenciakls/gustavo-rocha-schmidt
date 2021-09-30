@@ -1,10 +1,10 @@
 /* Cores do Tema */
 // $corPrincipal: #ee2924;
 $corPrincipal: #285565;
-$corPrincipalEscura: #c70007;
-$corPrincipalEscuraDark: #b90a06;
+$corPrincipalEscura: #1b4250;
+$corPrincipalEscuraDark: #102f3a;
 $corSecundaria: #d58720;
-$corSecundariaEscura: #dcdcdc;
+$corSecundariaEscura: #b16e15;
 $corBranco: #ffffff;
 $corText: #666666;
 $corGrayPrincipal: #ededed;
@@ -33,6 +33,14 @@ $xsTextMenu: 20px;
 @import 'index-banner';
 @import 'index-news';
 @import 'index-tips';
+@import 'index-about';
+@import 'index-palestras';
+@import 'index-livros';
+@import 'index-calendario';
+@import 'index-linkedin';
+@import 'index-artigos';
+@import 'index-twitter';
+@import 'index-contato';
 
 @import 'page-biography';
 @import 'page-contact';

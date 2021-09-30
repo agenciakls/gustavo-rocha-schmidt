@@ -2,7 +2,7 @@
  // Alterar o os dados do rodapé
 function alt_admin_footer ()
 {
-    echo '<span id="footer-thankyou">Desenvolvido por <strong>Yxe</strong></span>';
+    echo '<span id="footer-thankyou">Desenvolvido por <strong>Agência Campana</strong></span>';
 }
 add_filter('admin_footer_text', 'alt_admin_footer');
 
@@ -33,11 +33,11 @@ function showMessage($message, $errormsg = false)
     echo "<p><strong>$message</strong></p></div>";
 } 
  
-function showAdminMessages()
-{
-    showMessage("Esta é uma versão de homologação.", true);
-}
-add_action('admin_notices', 'showAdminMessages');
+// function showAdminMessages()
+// {
+//     showMessage("Esta é uma versão de homologação.", true);
+// }
+// add_action('admin_notices', 'showAdminMessages');
 
 // Remover editor de códigos do painel
 function remove_editor_menu() {

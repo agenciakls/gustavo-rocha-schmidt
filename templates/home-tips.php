@@ -2,7 +2,6 @@
 	<div class="container">	
 		<h1>Dicas</h1>
 		<div class="row list-tips"> 	
-			
 			<?php 
 			$argsTips = array(
 				'post_type' => 'dicas',
@@ -37,6 +36,5 @@
 				</a>
 			</div>
 		</div>
-
 	</div>
 </section>

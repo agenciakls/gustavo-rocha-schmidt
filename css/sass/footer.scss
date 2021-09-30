@@ -15,6 +15,9 @@ footer {
 			display: flex;
 			.single-redes {
 				padding: 0px 10px;
+				a {
+					color: $corBranco;
+				}
 			}
 		}
 	}

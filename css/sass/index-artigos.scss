@@ -1,0 +1,26 @@
+.home-artigos {
+    padding: 50px 0px;
+    .title-artigos {
+
+    }
+    .lista-artigos {
+        padding: 15px 0px;
+        .single-artigo {
+            padding: 30px;
+            border: solid 1px $corGrayPrincipal;
+            border-radius: 5px;
+            .artigo-data {
+                color: $corSecundaria;
+                font-weight: 500;
+            }
+            .artigo-categoria {
+                color: $corSecundaria;
+                font-weight: 500;
+            }
+            .artigo-titulo {
+                font-size: 1.2em;
+                color: $corPrincipal;
+            }
+        }
+    }
+}

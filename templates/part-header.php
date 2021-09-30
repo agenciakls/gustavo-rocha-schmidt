@@ -69,4 +69,4 @@
 		</ul>
 	</div>
 </nav>
-<?php get_template_part('templates/home', 'banner'); ?>
+<?php if (is_front_page()) { get_template_part('templates/home', 'banner'); } ?>
