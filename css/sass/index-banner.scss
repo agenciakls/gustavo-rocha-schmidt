@@ -67,30 +67,20 @@
 		background-repeat: no-repeat;
 		display: block;
 		position: relative;
-		& > img {
-			width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h3 {
+			color: $corBranco;
+			font-weight: 500;
+			font-size: 3em;
+			padding: 10px 0px;
 		}
-		.row {
-			height: 100%;
-			.swiper-content {
-				width: 100%;
-				height: 100%;
-				.swiper-wrapper {
-					height: 100%;
-					width: 100%;
-					.swiper-slide {
-						height: 100%;
-						width: 100%;
-						.banner-slide-single {
-							background-repeat: no-repeat;
-							background-size: cover;
-							background-position: center;
-							height: 100%;
-							width: 100%;
-						}
-					}
-				}
-			}
+		h4 {
+			color: $corBranco;
+			font-size: 2em;
+			font-weight: 300;
+			padding: 15px 0px;
 		}
 	}
 }

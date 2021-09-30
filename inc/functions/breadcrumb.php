@@ -19,7 +19,7 @@ function wp_custom_breadcrumbs() {
     }
     else {
 
-        echo '<div id="crumbs"><a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
+        echo '<div id="crumbs" class="crumbs"><a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
 
         if ( is_category() ) {
 

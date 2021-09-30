@@ -12,8 +12,9 @@ get_template_part('templates/ads', 'about');
 				<div class="col-md-6">
 					<div class="title-section">
 						<h3>
-							Gustavo
+							Gustavo da Rocha Schmidt
 						</h3>
+						<hr class="line">
 					</div>
 					<div class="content-section">
 					<p>Gustavo da Rocha Schmidt é advogado, sócio de Schmidt, Lourenço & Kingston Advogados Associados, Professor da FGV Direito Rio, Presidente do Centro Brasileiro de Mediação e Arbitragem - CBMA e Procurador do Município do Rio de Janeiro. </p>

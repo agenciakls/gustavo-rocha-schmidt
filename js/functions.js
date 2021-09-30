@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 	function toggleMenu() {
 		$(".hamburger").toggleClass('is-active');
 		$("nav").toggleClass('active');

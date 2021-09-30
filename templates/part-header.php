@@ -1,4 +1,4 @@
-<header>
+<header <?php if (is_front_page()) { echo ' class="home-bar"'; } ?>>
 	<div class="header-area">
 		<div class="header-background<?php if (!is_front_page()) { echo ' front-header'; } ?>"></div>
 		<div class="header-main">
