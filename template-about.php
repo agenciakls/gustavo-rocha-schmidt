@@ -36,6 +36,7 @@ get_template_part('templates/ads', 'about');
 	</div>
 </main>
 <?php
+get_template_part('templates/about', 'reconhecimento');
 get_template_part('templates/about', 'areas');
 get_template_part('templates/home', 'linkedin');
 get_footer();

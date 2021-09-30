@@ -2,13 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="pre-title">
-                    ACOMPANHE O
+                <div class="mb-5">
+                    <div class="pre-title text-center">
+                        ACOMPANHE O
+                    </div>
+                    <h3 class="title-calendario text-center">
+                        Calendário  
+                    </h3>
+                    <hr class="line text-center">
                 </div>
-                <h3 class="title-calendario">
-                    Calendário  
-                </h3>
-                <hr class="line text-center">
                 <div class="lista-calendario">
                     <div class="single-calendario row">
                         <div class="col-md-4 thumb-calendario">

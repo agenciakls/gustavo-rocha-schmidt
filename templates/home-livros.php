@@ -10,8 +10,12 @@
                     <div class="row d-flex">
                         <div class="col-md-6">
                             <h4>Comentários à Lei de Arbitragem</h4>
-                            <p>O livro Comentários à Lei de Arbitragem aborda não apenas o regramento aplicável ao instituto no Brasil, mas também examina, cuidadosamente, as alterações promovidas pela Reforma da Lei, de 2015. Faz isso com rigor metodológico e profundidade teórica, sem descuidar da jurisprudência dos tribunais, em especial daquilo que vem sendo decidido pelo Superior Tribunal de Justiça. […]</p>
-                            <button class="button secundary">Comprar</button>
+                            <p class="my-3">O livro Comentários à Lei de Arbitragem aborda não apenas o regramento aplicável ao instituto no Brasil, mas também examina, cuidadosamente, as alterações promovidas pela Reforma da Lei, de 2015. Faz isso com rigor metodológico e profundidade teórica, sem descuidar da jurisprudência dos tribunais, em especial daquilo que vem sendo decidido pelo Superior Tribunal de Justiça. […]</p>
+                            <div class="d-flex my-3">
+                                <button class="button secundary">Comprar</button>
+                                <button class="button secundary button-out">Ler Mais</button>
+                            </div>
+                            
                         </div>
                         <div class="col-md-6">
                             <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/produto.png" alt="">
