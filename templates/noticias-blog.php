@@ -15,9 +15,6 @@
 										<div class="text">
 											<h2><?php the_title(); ?></h2>
 											<h3><?php echo get_the_date(); ?></h3>
-											<h3><?php foreach (get_the_category() as $singleCategory) {
-												echo var_dump($singleCategory);
-											} ?></h3>
 											<p><?php echo get_the_excerpt(); ?></p>
 											<!-- <span class="view-more">Ver Mais </span> -->
 										</div>

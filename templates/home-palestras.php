@@ -11,7 +11,7 @@
                 <hr class="line">
 
                 <div class="palestras">
-                    <div class="splide" id="splide">
+                    <div class="splide" id="palestras">
                         <div class="splide__track">
                             <div class="splide__list">
                                         

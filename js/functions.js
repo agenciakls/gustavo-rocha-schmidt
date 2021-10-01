@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-	new Splide('.splide', {
+	new Splide('#palestras', {
+		type: 'loop',
+		perPage: 3,
+		focus: 'center',
+	}).mount();
+	new Splide('#artigos', {
 		type: 'loop',
 		perPage: 3,
 		focus: 'center',

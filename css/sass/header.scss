@@ -103,6 +103,12 @@ header {
 				font-size: 2em;
 				color: $corPrincipal;
 			}
+			.separator {
+				padding: 22px 10px;
+				img {
+					width: 2px;
+				}
+			}
 		}
 		nav {
 			ul.header-menu {

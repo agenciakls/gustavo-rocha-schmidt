@@ -1,0 +1,28 @@
+.search-modal {
+    .modal-content {
+        background-color: #efefef;
+        border-radius: 0px;
+        border: none;
+        .box-search {
+            padding: 35px;
+            border: none;
+            border-radius: 0px;
+            .content-search {
+                position: relative;
+                h3 {
+                    font-size: 1.2em;
+                    margin: 10px 0px 20px;
+                }
+                .button-search {
+                    background-color: transparent;
+                    position: absolute;
+                    top: 27px;
+                    right: 0px;
+                    img {
+                        width: 15px;
+                    }
+                }
+            }
+        } 
+    }
+}
