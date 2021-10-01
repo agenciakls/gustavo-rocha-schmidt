@@ -6,13 +6,7 @@
                 <h3 class="title-contato">Contato</h3>
                 <hr class="line text-center" />
                 <div class="description-contato my-3">Entre em contato com Gustavo da Rocha Schmidt. Envie uma mensagem pelo formulário abaixo.</div>
-                <form action="">
-                    <input type="text" name="nome" class="form-control" />
-                    <input type="text" name="nome" class="form-control" />
-                    <input type="text" name="nome" class="form-control" />
-                    <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
-                    <button type="submit" class="button secundary">Enviar Mensagem</button>
-                </form>
+                <?php echo do_shortcode('[contact-form-7 id="33" title="Contato"]'); ?>
             </div>
         </div>
     </div>

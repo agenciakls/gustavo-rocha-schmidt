@@ -70,7 +70,6 @@ function wp_custom_breadcrumbs() {
                 $categoria = get_the_terms($post->ID, $categoriaSlug[0]);
                 $categoriaLink = get_term_link($categoria[0]->term_id, $categoriaSlug[0]);
                 echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->name . '</a>';
-                 echo ' ' . $delimiter . ' <a href="' . $categoriaLink . '">' . $categoria[0]->name . '</a> ';
                 if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
 
             } else {

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="">
+                <a href="<?php echo InfoVar::show('linkedin'); ?>" target="_blank">
                     <h3>
                         Faça parte da rede do Gustavo Schmidt
                     </h3>

@@ -1,0 +1,20 @@
+.part-aside {
+    .part-search {
+        background-color: #efefef;
+        padding: 35px;
+        h3 {
+            font-size: 1.2em;
+            margin: 10px 0px 20px;
+        }
+    } 
+
+    .part-twitter {
+        margin: 15px 0px;
+        height: 500px;
+        overflow-y: scroll;
+        display: flex;
+        justify-content: center;
+        border: solid 5px $corGrayPrincipal;
+        border-radius: 5px;
+    }
+}

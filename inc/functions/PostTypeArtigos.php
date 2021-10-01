@@ -37,8 +37,6 @@ function postTypeArtigos () {
 }
 add_action('init', 'postTypeArtigos');
 
-
-
 function artigosTax() {
     $label = array(
         'name' => 'Categorias',

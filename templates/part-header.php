@@ -42,28 +42,13 @@
 	<div id="pre-socials-container" class="pre-socials-container">
 		<ul id="pre-list-ul" class="pre-header-list">
 			<li id="nav-menu-item-6">
-				<a href="<?php echo InfoVar::show('radio'); ?>" target="blank" class="menu-link main-menu-link">
-					<i class="fas fa-broadcast-tower"></i>
+				<a href="<?php echo InfoVar::show('twitter'); ?>" target="blank" class="menu-link main-menu-link">
+					<i class="fab fa-twitter"></i>
 				</a>
 			</li>
 			<li id="nav-menu-item-6">
-				<a href="<?php echo InfoVar::show('email'); ?>" target="blank" class="menu-link main-menu-link">
-					<i class="far fa-envelope"></i>
-				</a>
-			</li>
-			<li id="nav-menu-item-6">
-				<a href="<?php echo InfoVar::show('facebook'); ?>" target="blank" class="menu-link main-menu-link">
-					<i class="fab fa-facebook"></i>
-				</a>
-			</li>
-			<li id="nav-menu-item-6">
-				<a href="<?php echo InfoVar::show('instagram'); ?>" target="blank" class="menu-link main-menu-link">
-					<i class="fab fa-instagram"></i>
-				</a>
-			</li>
-			<li id="nav-menu-item-6">
-				<a href="<?php echo InfoVar::show('youtube'); ?>" target="blank" class="menu-link main-menu-link">
-					<i class="fab fa-youtube"></i>
+				<a href="<?php echo InfoVar::show('linkedin'); ?>" target="blank" class="menu-link main-menu-link">
+					<i class="fab fa-linkedin"></i>
 				</a>
 			</li>
 		</ul>

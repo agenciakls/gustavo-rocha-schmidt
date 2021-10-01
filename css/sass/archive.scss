@@ -1,0 +1,32 @@
+.section-archive {
+    .list-posts {
+        .single-post {
+            border: solid 1px $corGrayPrincipal;
+            margin: 15px 0px;
+            border-radius: 10px;
+            overflow: hidden;
+            .content {
+                .post-thumbnail {
+                    width: 100%;
+                }
+                .text {
+                    padding: 20px;
+                    h2 {
+                        color: $corPrincipal;
+                        font-size: 1.4em;
+                        text-transform: uppercase;
+                    }
+                    h3 {
+                        color: #bbb;
+                        font-size: 0.9em;
+                        font-weight: 300;
+                    }
+                    p {
+                        color: #4a4a4a;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+}

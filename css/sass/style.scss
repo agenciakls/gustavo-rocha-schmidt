@@ -28,6 +28,7 @@ $xsTextMenu: 20px;
 @import 'menu';
 @import 'icons';
 @import 'fonts';
+@import 'vertical-timeline';
 
 @import 'index';
 @import 'index-banner';
@@ -42,9 +43,11 @@ $xsTextMenu: 20px;
 @import 'index-twitter';
 @import 'index-contato';
 
+@import 'archive';
+@import 'aside';
+@import 'single';
+
 @import 'page-about-reconhecimento';
-@import 'page-biography';
-@import 'page-contact';
 
 @import 'cookie';
 
