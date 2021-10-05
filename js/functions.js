@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		focus: 'center',
 		arrows: false,
 	}).mount();
+	new Splide('#livros', {
+		type: 'fade',
+		perPage: 1,
+		focus: 'center',
+		arrows: false,
+	}).mount();
 	new Splide('#artigos', {
 		type: 'loop',
 		perPage: 3,
