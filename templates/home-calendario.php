@@ -7,7 +7,7 @@
                         ACOMPANHE O
                     </div>
                     <h3 class="title-calendario text-center">
-                        Calendário  
+                        Calendário 2 
                     </h3>
                     <hr class="line text-center">
                 </div>
@@ -15,7 +15,7 @@
                     <div class="single-calendario row">
                         <div class="col-md-4 thumb-calendario">
                             <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/calendario.jpg" class="img-fluid" alt="">
-                        </div>asdasd
+                        </div>
                         <div class="col-md-8 content-text">
                             O talk show, em formato de debate, terá por tema "A Administração Pública na Berlina" e contará com a participação do Procurador-Geral da ANP Evandro Caldas, da Subprocuradora-Geral do Estado de São Paulo Eugenia Marolla e da Advogada da União, integrante do Núcleo Especializado em Arbitragem da AGU Tatiana Mesquita Nunes.
                             <div class="buttons-calendario">
