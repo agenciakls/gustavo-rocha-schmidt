@@ -17,7 +17,7 @@ main {
 	}
 }
 h1, h2, h3, h4, h5, h6 { 
-	font-family: 'Open Sans';
+	font-family: 'Montserrat';
     font-weight: 700;
 	margin: 0px;
 	&.title {
@@ -55,6 +55,14 @@ hr.line {
     }
 }
 
+.ver-todos {
+    float: right;
+    display: flex;
+    .icon-todos {
+        padding: 0px 15px;
+    }
+}
+
 /* ELEMENTOS */
 ul { list-style-type: none; padding-inline-start: 0px; }
 img { max-width: 100%; }
@@ -66,7 +74,7 @@ img { max-width: 100%; }
     padding: 12px 15px;
     margin-bottom: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: $corBranco !important;
     color: $corPrincipal;
     background-color: transparent;
@@ -216,6 +224,32 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     }
 }
 
+.splide {
+    .splide__pagination {
+        bottom: -20px !important;
+    }
+    .splide__arrows {
+        .splide__arrow--next {
+            right: -2em;
+        }
+        .splide__arrow--prev {
+            left: -2em;
+        }
+    }
+    .splide__pagination__page {
+        background-color: transparent;
+        border: solid 1px $corPrincipal;
+        width: 100px;
+        border-radius: 10px;
+        opacity: 1;
+        height: 10px;
+        &.is-active {
+            transform: none;
+            border: solid 1px $corSecundaria;
+            background-color: $corSecundaria;
+        }
+    }
+}
 @media screen and (max-width: $xsWidth) {
     h1 { font-size: 30px; }
 }

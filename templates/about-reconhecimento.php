@@ -21,9 +21,7 @@
                     </div> <!-- cd-timeline-block -->
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-movie">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-                        </div> <!-- cd-timeline-img -->
+                        <div class="cd-timeline-img cd-movie"></div> <!-- cd-timeline-img -->
 
                         <div class="cd-timeline-content">
                             <h2>Title of section 2</h2>
@@ -34,9 +32,7 @@
                     </div> <!-- cd-timeline-block -->
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-picture">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
-                        </div> <!-- cd-timeline-img -->
+                        <div class="cd-timeline-img cd-picture"></div> <!-- cd-timeline-img -->
 
                         <div class="cd-timeline-content">
                             <h2>Title of section 3</h2>
@@ -47,9 +43,7 @@
                     </div> <!-- cd-timeline-block -->
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-location">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-                        </div> <!-- cd-timeline-img -->
+                        <div class="cd-timeline-img cd-location"></div> <!-- cd-timeline-img -->
 
                         <div class="cd-timeline-content">
                             <h2>Title of section 4</h2>
@@ -60,9 +54,7 @@
                     </div> <!-- cd-timeline-block -->
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-location">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-                        </div> <!-- cd-timeline-img -->
+                        <div class="cd-timeline-img cd-location"></div> <!-- cd-timeline-img -->
 
                         <div class="cd-timeline-content">
                             <h2>Title of section 5</h2>
@@ -73,9 +65,7 @@
                     </div> <!-- cd-timeline-block -->
 
                     <div class="cd-timeline-block">
-                        <div class="cd-timeline-img cd-movie">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-                        </div> <!-- cd-timeline-img -->
+                        <div class="cd-timeline-img cd-movie"></div> <!-- cd-timeline-img -->
 
                         <div class="cd-timeline-content">
                             <h2>Final Section</h2>

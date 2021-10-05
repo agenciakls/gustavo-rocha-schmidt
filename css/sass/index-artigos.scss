@@ -1,5 +1,5 @@
 .home-artigos {
-    padding: 50px 0px;
+    padding: 100px 0px;
     .title-artigos {
 
     }
@@ -17,6 +17,11 @@
             .artigo-categoria {
                 color: $corSecundaria;
                 font-weight: 500;
+                img {
+                    width: 22px;
+                    margin: 5px;
+                    vertical-align: bottom;
+                }
             }
             .artigo-titulo {
                 font-size: 1.2em;

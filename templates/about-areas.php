@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 
-            <div class="pre-title">
+                <div class="pre-title">
                     COMPETÊNCIAS
                 </div>
                 <h3 class="title-areas">
@@ -14,7 +14,10 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">
-                                ARBITRAGEM
+                                <div class="area-icon">
+                                    <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-arbitragem.svg" class="img-icon" alt="">
+                                </div>    
+                                <span>ARBITRAGEM</span>    
                             </a>
                         </h2>
                         <div id="accordion1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
@@ -28,7 +31,10 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="true" aria-controls="accordion2">
-                                CONTENCIOSO CÍVEL
+                                <div class="area-icon">
+                                    <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-contencioso-civel.svg" class="img-icon" alt="">
+                                </div>    
+                                <span>CONTENCIOSO CÍVEL</span>
                             </a>
                         </h2>
                         <div id="accordion2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion2">
@@ -42,7 +48,10 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="true" aria-controls="accordion3">
-                                CONTENCIOSO EMPRESARIAL
+                                <div class="area-icon">
+                                    <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-contencioso-empresarial.svg" class="img-icon" alt="">
+                                </div>    
+                                <span>CONTENCIOSO EMPRESARIAL</span>
                             </a>
                         </h2>
                         <div id="accordion3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion3">
@@ -56,7 +65,10 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="true" aria-controls="accordion4">
-                                DIREITO ADMINISTRATIVO
+                                <div class="area-icon">
+                                    <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-direito-administrativo.svg" class="img-icon" alt="">
+                                </div>    
+                                <span>DIREITO ADMINISTRATIVO</span>
                             </a>
                         </h2>
                         <div id="accordion4" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion4">
@@ -70,7 +82,10 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="true" aria-controls="accordion5">
-                                DIREITO CONSTITUCIONAL
+                                <div class="area-icon">
+                                    <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-direito-constitucional.svg" class="img-icon" alt="">
+                                </div>    
+                                <span>DIREITO CONSTITUCIONAL</span>
                             </a>
                         </h2>
                         <div id="accordion5" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion5">

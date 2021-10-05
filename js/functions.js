@@ -3,11 +3,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		type: 'loop',
 		perPage: 3,
 		focus: 'center',
+		arrows: false,
 	}).mount();
 	new Splide('#artigos', {
 		type: 'loop',
 		perPage: 3,
 		focus: 'center',
+		arrows: false,
 	}).mount();
 });
 $(document).ready(function () {
