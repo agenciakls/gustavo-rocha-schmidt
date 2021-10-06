@@ -7,7 +7,7 @@
                         ACOMPANHE O
                     </div>
                     <h3 class="title-calendario text-center">
-                        Calendário 2 
+                        Calendário  
                     </h3>
                     <hr class="line text-center">
                 </div>

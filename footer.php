@@ -70,7 +70,7 @@
 			});
 			
 		});
-	</script>asd
+	</script>
 	<script src="<?php bloginfo('template_url'); ?>/js/splide.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/vertical-timeline.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.19"></script>

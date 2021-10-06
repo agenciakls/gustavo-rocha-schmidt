@@ -6,7 +6,7 @@ a, a:hover, a:active, a:focus, a:visited { cursor: pointer; text-decoration: non
 
 /* TÍTULOS E TEXTOS */
 main { 
-	padding: 15px 0px; 
+	padding: 40px 0px; 
 	font-size: 18px; 
 	min-height: 500px;
 	h1, h2, h3, h4, h5, h6 {
@@ -226,7 +226,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 .splide {
     .splide__pagination {
-        bottom: -20px !important;
+        bottom: -30px !important;
     }
     .splide__arrows {
         .splide__arrow--next {
@@ -242,7 +242,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
         width: 100px;
         border-radius: 10px;
         opacity: 1;
-        height: 10px;
+        height: 12px;
         &.is-active {
             transform: none;
             border: solid 1px $corSecundaria;

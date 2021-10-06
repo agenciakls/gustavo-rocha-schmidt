@@ -1,10 +1,6 @@
-<header <?php if (is_front_page()) {
-			echo ' class="home-bar"';
-		} ?>>
+<header <?php if (is_front_page()) { echo ' class="home-bar"'; } ?>>
 	<div class="header-area">
-		<div class="header-background<?php if (!is_front_page()) {
-											echo ' front-header';
-										} ?>"></div>
+		<div class="header-background <?php if (!is_front_page()) { echo ' front-header'; } ?>"></div>
 		<div class="header-main">
 			<div class="container-fluid d-flex justify-content-between align-items-center">
 				<div class="logo">
@@ -13,7 +9,6 @@
 				<div class="header-buttons">
 					<div class="header-search search" id="search-action" tabindex="-1">
 						<div class="button-search">
-							<!-- <i class="fa fa-search"></i></button> -->
 							<img src="<?php bloginfo('template_url'); ?>/img/icons/icon-feather-search.svg" alt="">
 						</div>
 					</div>
