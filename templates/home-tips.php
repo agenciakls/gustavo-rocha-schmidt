@@ -1,4 +1,4 @@
-<section class="section section-tips">
+<section class="section section-tips section-home">
 	<div class="container">	
 		<h1>Dicas</h1>
 		<div class="row list-tips"> 	

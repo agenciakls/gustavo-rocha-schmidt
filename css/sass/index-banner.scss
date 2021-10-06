@@ -72,15 +72,15 @@
 		align-items: center;
 		h3 {
 			color: $corBranco;
-			font-weight: 500;
-			font-size: 3em;
-			padding: 10px 0px;
+			font-weight: 700;
+			font-size: 3.25em;
+			padding: 0px 0px;
 		}
 		h4 {
 			color: $corBranco;
-			font-size: 2em;
-			font-weight: 300;
-			padding: 15px 0px;
+			font-size: 2.5em;
+			font-weight: 400;
+			padding: 0px 0px;
 		}
 	}
 }
@@ -140,7 +140,7 @@
 @media screen and (min-width: $xlWidth) {
 	.home-topo {
 		.home-banner {
-			min-height: 80vh;
+			min-height: 100vh;
 			& > img {
 				display: none;
 			}

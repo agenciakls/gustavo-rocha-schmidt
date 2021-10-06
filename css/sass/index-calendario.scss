@@ -5,6 +5,36 @@
         .single-calendario {
             margin: 15px 0px;
             background-color: white;
+            .col-date {
+                background-color: $corSecundaria;
+                color: $corBranco;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                .date-day {
+                    line-height: 1.2;
+                    font-size: 3em;
+                }
+                .date-month {
+                    line-height: 1.2;
+                    font-size: 2em;
+                }
+                .date-year {
+                    line-height: 1.2;
+                    font-size: 2em;
+                }
+                hr {
+                    border: solid 1px $corBranco;
+                    width: 100%;
+                    opacity: 1;
+                }
+                .date-hour {
+                    font-size: 1.5em;
+                    font-weight: 500;
+                }
+            }
             .thumb-calendario {
                 padding: 0px;
                 img {
@@ -13,6 +43,11 @@
             }
             .content-text {
                 padding: 25px;
+                h4 {
+                    font-size: 1.5em;
+                    color: #285565;
+                    line-height: 1.3;
+                }
                 .buttons-calendario {
                     display: flex;
                     justify-content: flex-end;

@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		perPage: 3,
 		focus: 'center',
 		arrows: false,
+		perMove: 3,
 	}).mount();
 	new Splide('#livros', {
 		type: 'fade',
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		perPage: 3,
 		focus: 'center',
 		arrows: false,
+		perMove: 3,
 	}).mount();
 });
 $(document).ready(function () {

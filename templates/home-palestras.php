@@ -1,8 +1,8 @@
-<div class="home-palestras">
+<div class="home-palestras section-home">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="row">
+                <div class="heading-title row d-flex align-items-end">
                     <div class="col-md-6">
                         <div class="pre-title">
                             ASSITA AS

@@ -36,7 +36,7 @@
                 <?php
                 $postType = get_post_type();
                 $terms = get_terms( array(
-                    'taxonomy' => $postType,
+                    'taxonomy' => $postType . 'tag',
                     'hide_empty' => false,
                 ) );
                 foreach ($terms as $term) {

@@ -1,11 +1,13 @@
-<div class="home-livros">
+<div class="home-livros section-home">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="title-livros">
-                    Livros Publicados
-                </h3>
-                <hr class="line text-center">
+                <div class="heading-title">
+                    <h3 class="title-livros">
+                        Livros Publicados
+                    </h3>
+                    <hr class="line text-center">
+                </div>
                 <div class="splide" id="livros">
                     <div class="splide__track">
                         <div class="splide__list">

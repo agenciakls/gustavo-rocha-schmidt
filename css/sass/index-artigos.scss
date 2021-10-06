@@ -1,10 +1,10 @@
 .home-artigos {
-    padding: 100px 0px;
+    padding: 120px 0px;
     .title-artigos {
 
     }
     .lista-artigos {
-        padding: 15px 0px;
+        margin: 0px -15px;
         .single-artigo {
             padding: 30px;
             border: solid 1px $corGrayPrincipal;
@@ -12,11 +12,11 @@
             margin: 15px;
             .artigo-data {
                 color: $corSecundaria;
-                font-weight: 500;
+                font-weight: 400;
             }
             .artigo-categoria {
                 color: $corSecundaria;
-                font-weight: 500;
+                font-weight: 400;
                 img {
                     width: 22px;
                     margin: 5px;
@@ -24,8 +24,9 @@
                 }
             }
             .artigo-titulo {
-                font-size: 1.2em;
+                font-size: 1.5em;
                 color: $corPrincipal;
+                line-height: 1.3;
             }
         }
     }

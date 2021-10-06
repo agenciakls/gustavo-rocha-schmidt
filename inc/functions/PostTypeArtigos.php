@@ -74,3 +74,41 @@ function artigosTax() {
     );
 }
 add_action('init',  'artigosTax');
+
+function artigosTags() {
+    $label = array(
+        'name' => 'Tags',
+        'singular_name' => 'Tag',
+        'menu_name' => 'Tag',
+        'all_items' => 'Todas as Tags',
+        'edit_item' => 'Editar Tag',
+        'view_item' => 'Visualizar',
+        'update_item' => 'Atualizar',
+        'add_new_item' => 'Adicionar Nova',
+        'new_item_name' => 'Novo Item',
+        'parent_item' => 'Tag Pai',
+        'parent_item_colon' => '',
+        'search_items' => '',
+        'popular_items' => '',
+        'separate_items_with_commas' => '',
+        'add_or_remove_items' => '',
+        'choose_from_most_used' => '',
+        'not_found' => ''
+    );
+    register_taxonomy(
+        'artigostag',
+        'artigos',
+        array(
+            'labels' => $label,
+            'public' => true,
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'hierarchical' => false,
+            'show_admin_column' => true,
+            'show_in_rest' => true,
+            'query_var' => true,
+            'rewrite' => array('slug' => 'artigos-tag')
+        )
+    );
+}
+add_action('init',  'artigosTags');

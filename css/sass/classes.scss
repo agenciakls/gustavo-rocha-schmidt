@@ -28,41 +28,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pre-title {
-    font-size: 1.2em;
+    font-size: 2em;
     color: $corSecundaria;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
 }
 h2 { font-size: 35px; color: $corPrincipal; }
 h3 {
     color: $corPrincipal;
-    font-size: 2em;
-    font-weight: 800;
+    font-size: 3.25em;
+    font-weight: 900;
 }
 h4 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     margin: 15px 0px;
     color: #285565;
 }
 .content-text { color: $corText; }
 hr.line {
     width: 50px;
-    border: solid 2px $corSecundaria;
+    border: solid 1px $corSecundaria;
     opacity: 1;
     &.text-center {
         display: block;
         margin: 15px auto;
     }
 }
-
+p {
+    font-size: 1em;
+    line-height: 2;
+    font-weight: 400;
+}
 .ver-todos {
     float: right;
     display: flex;
+    padding: 10px 0px;
     .icon-todos {
         padding: 0px 15px;
+        width: 65px;
     }
 }
-
+.section-home {
+    padding: 140px 0px !important;
+    .heading-title {
+        margin-bottom: 60px;
+    }
+}
 /* ELEMENTOS */
 ul { list-style-type: none; padding-inline-start: 0px; }
 img { max-width: 100%; }
@@ -90,14 +101,15 @@ input[type=button], input[type=submit], input[type=reset], button, .button {
     background-color: $corPrincipal;
     color: $corBranco;
     border: none;
-    margin: 20px 5px;
-    padding: 10px 20px;
+    margin: 10px 10px 0px 0px;
+    padding: 10px 50px;
     text-align: center;
     text-transform: uppercase;
     font-size: 1em;
     cursor: pointer;
     transition: ease 0.3s all;
     border-radius: 5px;
+    font-weight: 900;
     &.button-out {
         background-color: transparent;
         color: $corPrincipal;
@@ -226,7 +238,9 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 .splide {
     .splide__pagination {
-        bottom: -30px !important;
+        bottom: 0px !important;
+        position: relative;
+        margin: 50px 0px 0px;
     }
     .splide__arrows {
         .splide__arrow--next {

@@ -1,8 +1,8 @@
-<div class="home-twitter">
+<div class="home-twitter section-home">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="row">
+                <div class="heading-title row">
                     <div class="col-md-6">
                         <div class="pre-title">
                             As últimas
