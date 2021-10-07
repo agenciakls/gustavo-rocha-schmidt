@@ -12,47 +12,60 @@
     </div>
     <?php 
     if (get_post_type() && !is_search()) {
-        ?>
         
-        <div class="part-categorias">
-            <h3>Filtrar por categorias</h3>
-            <div class="content-categorias">
-                <?php
-                $postType = get_post_type();
-                $terms = get_terms( array(
-                    'taxonomy' => $postType,
-                    'hide_empty' => false,
-                ) );
-                foreach ($terms as $term) {
-                    $singleTerm = get_term_link($term->term_id, $postType);
-                    ?><a href="<?php echo $singleTerm; ?>"><div class="single-categorias"><i class="fas fa-chevron-right"></i> <?php echo $term->name; ?></div></a><?php
-                }
-                ?>
+        $postType = get_post_type();
+        $terms = get_terms( array(
+            'taxonomy' => $postType,
+            'hide_empty' => false,
+        ) );
+                
+        if ($terms->count) {
+            ?>
+            <div class="part-categorias">
+                <h3>Filtrar por categorias</h3>
+                <div class="content-categorias">
+                    <?php
+                    foreach ($terms as $term) {
+                        $singleTerm = get_term_link($term->term_id, $postType);
+                        ?><a href="<?php echo $singleTerm; ?>"><div class="single-categorias"><i class="fas fa-chevron-right"></i> <?php echo $term->name; ?></div></a><?php
+                    }
+                    ?>
+                </div>
             </div>
-        </div>
-        <div class="part-tags">
-            <h3>Tags</h3>
-            <div class="content-tags">
-                <?php
-                $postType = get_post_type();
-                $terms = get_terms( array(
-                    'taxonomy' => $postType . 'tag',
-                    'hide_empty' => false,
-                ) );
-                foreach ($terms as $term) {
-                    $singleTerm = get_term_link($term->term_id, $postType);
-                    ?><a href="<?php echo $singleTerm; ?>"><div class="single-tags"><?php echo $term->name; ?></div></a><?php
-                }
-                ?>
+            <?php
+        }
+                
+
+
+        $postType = get_post_type();
+        $terms = get_terms( array(
+            'taxonomy' => $postType . 'tag',
+            'hide_empty' => false,
+        ) );
+        if ($terms->count) {
+            ?>
+            <div class="part-tags">
+                <h3>Tags</h3>
+                <div class="content-tags">
+                    <?php
+                    foreach ($terms as $term) {
+                        $singleTerm = get_term_link($term->term_id, $postType);
+                        ?><a href="<?php echo $singleTerm; ?>"><div class="single-tags"><?php echo $term->name; ?></div></a><?php
+                    } 
+                    ?>
+                </div>
             </div>
-        </div>
-        <?php
+            <?php
+        }
+                
+               
     }
     ?>
-    <div class="part-tags">
-        
+    <div class="part-shorcode part-twitter">
+        <h3>Twiiter</h3>
+        <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
     </div>
-    <div class="part-twitter">
+    <!-- <div class="part-twitter">
         <a class="twitter-timeline" href="https://twitter.com/GustavoRSchmidt?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+    </div> -->
 </div>

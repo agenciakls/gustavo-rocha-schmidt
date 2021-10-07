@@ -1,24 +1,30 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-	new Splide('#palestras', {
-		type: 'loop',
-		perPage: 3,
-		focus: 'center',
-		arrows: false,
-		perMove: 3,
-	}).mount();
-	new Splide('#livros', {
-		type: 'fade',
-		perPage: 1,
-		focus: 'center',
-		arrows: false,
-	}).mount();
-	new Splide('#artigos', {
-		type: 'loop',
-		perPage: 3,
-		focus: 'center',
-		arrows: false,
-		perMove: 3,
-	}).mount();
+	var palestras = $('#palestras');
+	var livros = $('#livros');
+	var artigos = $('#artigos');
+	if (typeof palestras !== 'undefined') {
+		new Splide('#palestras', {
+			type: 'loop',
+			perPage: 3, 
+			arrows: false,
+			perMove: 1,
+		}).mount();
+	}
+	if (typeof livros !== 'undefined') {
+		new Splide('#livros', {
+			type: 'fade',
+			perPage: 1,
+			arrows: false,
+		}).mount();
+	}
+	if (typeof artigos !== 'undefined') {
+		new Splide('#artigos', {
+			type: 'loop',
+			perPage: 3,
+			arrows: false,
+			perMove: 1,
+		}).mount();
+	}
 });
 $(document).ready(function () {
 

@@ -29,30 +29,30 @@
                         <div class="splide__track">
                             <div class="splide__list">
                                         
-                                <div class="splide__slide">
-                                    <div class="single-palestra">
-                                        <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/thumb.jpg" alt="">
-                                        <h4>Congresso sul Brasileiro de Gestão e Direito Desportivo</h4>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="single-palestra">
-                                        <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/thumb.jpg" alt="">
-                                        <h4>Congresso sul Brasileiro de Gestão e Direito Desportivo</h4>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="single-palestra">
-                                        <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/thumb.jpg" alt="">
-                                        <h4>Congresso sul Brasileiro de Gestão e Direito Desportivo</h4>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="single-palestra">
-                                        <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/thumb.jpg" alt="">
-                                        <h4>Congresso sul Brasileiro de Gestão e Direito Desportivo</h4>
-                                    </div>
-                                </div>
+                                <?php 
+                                $argsPalestras = array(
+                                    'post_type' => 'aulas',
+                                    'posts_per_page' => 6
+                                );
+                                $queryPalestras = new WP_QUery($argsPalestras);
+                                if ($queryPalestras->have_posts()) {
+                                    while ($queryPalestras->have_posts()) {
+                                        $queryPalestras->the_post();
+                                        ?>
+                                        <div class="splide__slide">
+                                            <div class="single-palestra">
+                                                <?php 
+                                                if (has_post_thumbnail()) {
+                                                    ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" alt=""><?php
+                                                }
+                                                ?>
+                                                <h4><?php echo get_the_title(); ?></h4>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>

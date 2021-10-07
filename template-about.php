@@ -5,12 +5,12 @@ Template Name: Sobre
 get_header(); 
 get_template_part('templates/ads', 'about');
 ?>
-<main class="page-biography section">
+<main class="page-biography section section-home">
 	<div class="container">
 		<div class="box-biography">
 			<section class="row">
 				<div class="col-md-6">
-					<div class="title-section">
+					<div class="heading-title title-section">
 						<h3>
 							Gustavo da Rocha Schmidt
 						</h3>

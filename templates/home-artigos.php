@@ -23,33 +23,38 @@
                     <div class="splide" id="artigos">
                         <div class="splide__track">
                             <div class="splide__list">
-                                <div class="splide__slide">
-                                    <div class="single-artigo">
-                                        <div class="artigo-data">12/07/2021</div>
-                                        <div class="artigo-categoria"><img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/folder.svg" /> ARBITRAGEM</div>
-                                        <h4 class="artigo-titulo">
-                                            Arbitragem e fundos de pensão: disputas envolvendo companhias abertas, fundos de investimento e matéria previdenciária.
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="single-artigo">
-                                        <div class="artigo-data">12/07/2021</div>
-                                        <div class="artigo-categoria"><img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/folder.svg" /> ARBITRAGEM</div>
-                                        <h4 class="artigo-titulo">
-                                            Arbitragem e fundos de pensão: disputas envolvendo companhias abertas, fundos de investimento e matéria previdenciária.
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="single-artigo">
-                                        <div class="artigo-data">12/07/2021</div>
-                                        <div class="artigo-categoria"><img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/folder.svg" /> ARBITRAGEM</div>
-                                        <h4 class="artigo-titulo">
-                                            Arbitragem e fundos de pensão: disputas envolvendo companhias abertas, fundos de investimento e matéria previdenciária.
-                                        </h4>
-                                    </div>
-                                </div>
+                                <?php 
+                                $argsArtigos = array(
+                                    'post_type' => 'artigos',
+                                    'posts_per_page' => 6
+                                );
+                                $queryArtigos = new WP_QUery($argsArtigos);
+                                if ($queryArtigos->have_posts()) {
+                                    while ($queryArtigos->have_posts()) {
+                                        $queryArtigos->the_post();
+                                        ?>
+                                        <div class="splide__slide">
+                                            <div class="single-artigo">
+                                                <div class="artigo-data"><?php echo get_the_date(); ?></div>
+                                                <div class="artigo-categoria"><img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/folder.svg" /> <?php 
+											$postType = get_post_type();
+											$terms = get_the_terms( $post, $postType );
+											$listArray = array();
+											foreach ($terms as $term) {
+												$singleTerm = get_term_link($term->term_id, $postType);
+												$listArray[] = $term->name;
+											}
+											echo implode(' / ', $listArray);
+											?></div>
+                                                <h4 class="artigo-titulo">
+                                                    <?php echo get_the_title(); ?>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
