@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pre-title {
-    font-size: 2em;
+    font-size: 1.2em;
     color: $corSecundaria;
     text-transform: uppercase;
     font-weight: 400;
@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 h2 { font-size: 35px; color: $corPrincipal; }
 h3 {
     color: $corPrincipal;
-    font-size: 3.25em;
-    font-weight: 900;
+    font-size: 2em;
+    font-weight: 700;
 }
 h4 {
     font-size: 1.9em;
@@ -263,6 +263,20 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
             background-color: $corSecundaria;
         }
     }
+}
+#searchinput {
+    width: 200px;
+}
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
 }
 @media screen and (max-width: $xsWidth) {
     h1 { font-size: 30px; }

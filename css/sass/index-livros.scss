@@ -8,11 +8,85 @@
     .splide__pagination {
         position: relative;
         width: auto;
-        bottom: 70px !important;
+        bottom: 190px !important;
+        float: left;
         left: 0px;
         transform: translateX(0%) !important;
+        margin: 0px;
+        .splide__pagination__page {
+            height: 15px;
+            width: 15px;
+            transition: all 0.3s ease;
+            margin: 0px 15px 0px 0px;
+            &.is-active {
+                width: 45px;
+            }
+        }
+    }
+    .ver-todos {
+        padding: 7px 20px;
+        display: inline-block;
+        position: absolute;
+        bottom: 115px;
+        float: left;
     }
     button {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: $xsWidth) {
+
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    .home-livros {
+        .splide__pagination {
+            position: relative;
+            bottom: 0px !important;
+        }
+        .ver-todos {
+            position: relative;
+            bottom: 0px;
+        }
+    }
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+    .home-livros {
+        .splide__pagination {
+            bottom: 13px !important;
+        }
+        .ver-todos {
+            bottom: -15px;
+        }
+    }
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    .home-livros {
+        .splide__pagination {
+            bottom: 2px !important;
+        }
+        .ver-todos {
+            bottom: -25px;
+        }
+    }
+}
+@media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
+    .home-livros {
+        .splide__pagination {
+            bottom: 112px !important;
+        }
+        .ver-todos {
+            bottom: 85px;
+        }
+    }
+}
+@media screen and (min-width: $xxlWidth) {
+    .home-livros {
+        .splide__pagination {
+            bottom: 190px !important;
+        }
+        .ver-todos {
+            bottom: 165px;
+        }
     }
 }

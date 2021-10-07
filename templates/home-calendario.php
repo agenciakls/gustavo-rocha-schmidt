@@ -52,7 +52,7 @@
                         }
                     }
                     ?>
-                    <a href=""><button class="col-md-12 button secundary my-5 button-out">VER TODOS</button></a>
+                    <a href="<?php echo get_post_type_archive_link('eventos'); ?>"><button class="col-md-12 button secundary my-5 button-out">VER TODOS</button></a>
                 </div>
             </div>
         </div>

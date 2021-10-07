@@ -1,25 +1,22 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-	var palestras = $('#palestras');
-	var livros = $('#livros');
-	var artigos = $('#artigos');
-	if (typeof palestras !== 'undefined') {
+	if (document.getElementById('palestras') !== null) {
 		new Splide('#palestras', {
-			type: 'loop',
+			type: 'slide',
 			perPage: 3, 
 			arrows: false,
 			perMove: 1,
 		}).mount();
 	}
-	if (typeof livros !== 'undefined') {
+	if (document.getElementById('livros') !== null) {
 		new Splide('#livros', {
-			type: 'fade',
+			type: 'slide',
 			perPage: 1,
 			arrows: false,
 		}).mount();
 	}
-	if (typeof artigos !== 'undefined') {
+	if (document.getElementById('artigos') !== null) {
 		new Splide('#artigos', {
-			type: 'loop',
+			type: 'slide',
 			perPage: 3,
 			arrows: false,
 			perMove: 1,
@@ -27,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}
 });
 $(document).ready(function () {
-
 	$("#validate-continue").on('click', function () {
 		$.post(search_object.location, {
 			action: 'cookie',
@@ -56,6 +52,12 @@ $(document).ready(function () {
 		var positionCurrent = $(window).scrollTop();
 		if (positionCurrent < 500) { boxBackTop.fadeOut(300); }
 		else { boxBackTop.fadeIn(300); }
+	});
+	
+	var rollDown = $("#roll-down");
+	rollDown.on('click', function () {
+		var heightBanner = $(".home-banner").height();
+		$(window).scrollTop(heightBanner);
 	});
 
 	boxBackTop.on('click', function () {

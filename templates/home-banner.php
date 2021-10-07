@@ -8,5 +8,8 @@
 				</div>
 			</div>
 		</div>
+		<div class="button-roll-down">
+			<a class="roll-dow" id="roll-down"><img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/down-roll.svg" width="40" alt=""></a>
+		</div>
 	</div>
 </div>

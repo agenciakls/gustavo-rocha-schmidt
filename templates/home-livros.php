@@ -51,6 +51,14 @@
                             </div>
                         </div>
                     </div>
+                    <a href="<?php echo get_post_type_archive_link('livros'); ?>">
+                        <div class="ver-todos">
+                            <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/feather-arrow-right.svg" class="icon-todos" alt="" />
+                            <span class="vertodos">
+                                VER TODOS
+                            </span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

@@ -16,9 +16,10 @@
                     <a href="<?php echo InfoVar::show('linkedin'); ?>" target="_blank"><button class="button-twitter float-end"><i class="fab fa-twitter"></i> SEGUIR <strong>@GUSTAVORSCHMIDT</strong></button></a>
                     </div>
                 </div>
-                <div class="content-twitter">
+                <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
+                <!-- <div class="content-twitter">
                     <a class="twitter-timeline" href="https://twitter.com/GustavoRSchmidt?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

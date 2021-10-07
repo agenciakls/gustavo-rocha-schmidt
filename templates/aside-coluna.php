@@ -19,7 +19,6 @@
             'hide_empty' => false,
         ) );
                 
-        if ($terms->count) {
             ?>
             <div class="part-categorias">
                 <h3>Filtrar por categorias</h3>
@@ -33,7 +32,6 @@
                 </div>
             </div>
             <?php
-        }
                 
 
 
@@ -42,7 +40,6 @@
             'taxonomy' => $postType . 'tag',
             'hide_empty' => false,
         ) );
-        if ($terms->count) {
             ?>
             <div class="part-tags">
                 <h3>Tags</h3>
@@ -56,7 +53,6 @@
                 </div>
             </div>
             <?php
-        }
                 
                
     }
