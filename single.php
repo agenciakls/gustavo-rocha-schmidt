@@ -7,16 +7,21 @@ get_header();
 			<div class="col-md-7">
 				<div class="content-single">
 					<h1><?php echo get_the_title(); ?></h1>
-					<p class="text-muted"><small><i class="far fa-clock"></i> <?php echo get_the_date(' d/m/Y H:i '); ?></small> | <small><i class="fas fa-tag"></i> <?php 
+					<p class="text-muted"><small><i class="far fa-clock"></i> <?php echo get_the_date(' d/m/Y H:i '); ?></small> <?php 
 					$postType = get_post_type();
 					$terms = get_the_terms( $post, $postType );
 					$listArray = array();
-					foreach ($terms as $term) {
-						$singleTerm = get_term_link($term->term_id, $postType);
-						$listArray[] = $term->name;
+					
+					$count = (is_array($terms)) ? count($terms) : 0; 
+					if (has_term($postType, $postType) && $count > 0) {
+						foreach ($terms as $term) {
+							$singleTerm = get_term_link($term->term_id, $postType);
+							$listArray[] = $term->name;
+						}
+						?>| <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray); ?></small></p><?php
 					}
-					echo implode(' / ', $listArray);
-					?></small></p>
+					if (get_field('link') && $postType == 'livros') { ?><a href="<?php echo get_field('link'); ?>" target="_blank"><button class="button secundary">Comprar</button></a><?php } 
+					?>
 					<div class="content-text">
 						<?php 
 						if (have_posts()) {

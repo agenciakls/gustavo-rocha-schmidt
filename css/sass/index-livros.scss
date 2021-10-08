@@ -53,10 +53,10 @@
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
     .home-livros {
         .splide__pagination {
-            bottom: 13px !important;
+            bottom: 27px !important;
         }
         .ver-todos {
-            bottom: -15px;
+            bottom: 35px;
         }
     }
 }
@@ -66,7 +66,7 @@
             bottom: 2px !important;
         }
         .ver-todos {
-            bottom: -25px;
+            bottom: -5px;
         }
     }
 }
@@ -76,7 +76,7 @@
             bottom: 112px !important;
         }
         .ver-todos {
-            bottom: 85px;
+            bottom: 105px;
         }
     }
 }
@@ -86,7 +86,7 @@
             bottom: 190px !important;
         }
         .ver-todos {
-            bottom: 165px;
+            bottom: 182px;
         }
     }
 }

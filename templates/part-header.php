@@ -4,7 +4,7 @@
 		<div class="header-main">
 			<div class="container-fluid d-flex justify-content-between align-items-center">
 				<div class="logo">
-					<a href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
+					<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
 				</div>
 				<div class="header-buttons">
 					<div class="header-search search" id="search-action" tabindex="-1">

@@ -1,7 +1,7 @@
 <div class="home-livros section-home">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 position-relative">
                 <div class="heading-title">
                     <h3 class="title-livros">
                         Livros Publicados
@@ -24,14 +24,13 @@
                             $queryArtigos->the_post();
                             ?>
                             <div class="splide__slide">
-                                
                                 <div class="content-livros">
                                     <div class="row d-flex">
                                         <div class="col-md-7">
                                             <h4><?php echo get_the_title(); ?></h4>
                                             <p class="my-3"><?php echo get_the_excerpt(); ?></p>
                                             <div class="d-flex my-3">
-                                                <a href="<?php echo get_permalink(); ?>"><button class="button secundary">Comprar</button></a>
+                                                <?php if (get_field('link')) { ?><a href="<?php echo get_field('link'); ?>" target="_blank"><button class="button secundary">Comprar</button></a><?php } ?>
                                                 <a href="<?php echo get_permalink(); ?>"><button class="button secundary button-out">Ler Mais</button></a>
                                             </div>
                                             

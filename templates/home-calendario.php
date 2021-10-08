@@ -21,15 +21,20 @@
                     if ($queryPalestras->have_posts()) {
                         while ($queryPalestras->have_posts()) {
                             $queryPalestras->the_post();
+                            $dataHorario = get_field('data_horario');
+                            $dia = strftime("%d", strtotime($dataHorario));
+                            $mes = strftime("%b", strtotime($dataHorario));
+                            $ano = strftime("%Y", strtotime($dataHorario));
+                            $hora = strftime("%k", strtotime($dataHorario));
                             ?>
                                 <div class="single-calendario row">
                                     <div class="col-md-2 col-date">
-                                        <div class="date-day">22</div>
-                                        <div class="date-month">JUN</div>
-                                        <div class="date-year">2021</div>
+                                        <div class="date-day"><?php echo $dia; ?></div>
+                                        <div class="date-month"><?php echo $mes; ?></div>
+                                        <div class="date-year"><?php echo $ano; ?></div>
                                         <hr />
                                         <div class="date-hour">
-                                            <i class="far fa-clock"></i> 18h
+                                            <i class="far fa-clock"></i> <?php echo $hora; ?>h
                                         </div>
                                     </div>
                                     <div class="col-md-3 thumb-calendario">
@@ -43,8 +48,8 @@
                                         <h4><?php echo get_the_title(); ?></h4>
                                         <?php the_excerpt(); ?>
                                         <div class="buttons-calendario">
-                                            <a href=""><button class="button secundary button-out">Informações</button></a>
-                                            <a href=""><button class="button secundary">ir para o evento</button></a>
+                                            <a href="<?php echo get_permalink(); ?>"><button class="button secundary button-out">Informações</button></a>
+                                            <?php if (get_field('link')) { ?><a href="<?php echo get_field('link'); ?>" target="_blank"><button class="button secundary">ir para o evento</button></a><?php } ?>
                                         </div>
                                     </div>
                                 </div>
