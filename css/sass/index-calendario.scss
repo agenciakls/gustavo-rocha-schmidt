@@ -37,8 +37,12 @@
             }
             .thumb-calendario {
                 padding: 0px;
-                img {
+                .img-thumb {
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     width: 100%;
+                    height: 100%;
                 }
             }
             .content-text {

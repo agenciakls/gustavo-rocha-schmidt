@@ -37,14 +37,14 @@
                                             <i class="far fa-clock"></i> <?php echo $hora; ?>h
                                         </div>
                                     </div>
-                                    <div class="col-md-3 thumb-calendario">
+                                    <div class="col-md-2 thumb-calendario">
                                     <?php 
                                     if (has_post_thumbnail()) {
-                                        ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" class="img-fluid" alt=""><?php
+                                        ?><div class="img-thumb" style="background-image: url('<?php echo get_the_post_thumbnail_url($post, 'full'); ?>');"></div><?php
                                     }
                                     ?>
                                     </div>
-                                    <div class="col-md-7 content-text">
+                                    <div class="col-md-8 content-text">
                                         <h4><?php echo get_the_title(); ?></h4>
                                         <?php the_excerpt(); ?>
                                         <div class="buttons-calendario">
