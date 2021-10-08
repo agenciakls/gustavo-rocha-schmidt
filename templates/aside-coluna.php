@@ -19,7 +19,7 @@
             'hide_empty' => false,
         ) );
         $count = (is_array($terms)) ? count($terms) : 0; 
-        if (has_term($postType, $postType . 'cat') && $count > 0) {
+        if (has_term('', $postType . 'cat') && $count > 0) {
             ?>
             <div class="part-categorias">
                 <h3>Filtrar por categorias</h3>

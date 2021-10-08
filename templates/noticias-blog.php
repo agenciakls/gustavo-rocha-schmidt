@@ -16,14 +16,16 @@
 											<h2><?php the_title(); ?></h2>
 											<h3><i class="far fa-clock"></i> <?php echo get_the_date(); ?><?php 
 											$postType = get_post_type();
-											if ($postType != 'livros') {
+											$terms = get_the_terms( $post, $postType . 'cat' );
+											$count = (is_array($terms)) ? count($terms) : 0; 
+											if (has_term('', $postType . 'cat') && $count > 0) {
 												$terms = get_the_terms( $post, $postType . 'cat' );
 												$listArray = array();
 												foreach ($terms as $term) {
 													$singleTerm = get_term_link($term->term_id, $postType . 'cat');
 													$listArray[] = $term->name;
 												}
-												?> | <small><i class="fas fa-tag"></i><?php echo implode(' / ', $listArray) ?></small></h3><?php
+												?> | <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray) ?></small></h3><?php
 											}
 											?>
 											<p><?php echo get_the_excerpt(); ?></p>

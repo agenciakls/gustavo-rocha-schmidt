@@ -9,16 +9,15 @@ get_header();
 					<h1><?php echo get_the_title(); ?></h1>
 					<p class="text-muted"><small><i class="far fa-clock"></i> <?php echo get_the_date(' d/m/Y H:i '); ?></small> <?php 
 					$postType = get_post_type();
-					$terms = get_the_terms( $post, $postType );
-					$listArray = array();
-					
+					$terms = get_the_terms( $post, $postType . 'cat' );
 					$count = (is_array($terms)) ? count($terms) : 0; 
-					if (has_term($postType, $postType . 'cat') && $count > 0) {
+					if (has_term('', $postType . 'cat') && $count > 0) {
+						$listArray = array();
 						foreach ($terms as $term) {
 							$singleTerm = get_term_link($term->term_id, $postType . 'cat');
 							$listArray[] = $term->name;
 						}
-						?>| <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray); ?></small></p><?php
+						?> | <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray) ?></small></h3><?php
 					}
 					if (get_field('link') && $postType == 'livros') { ?><a href="<?php echo get_field('link'); ?>" target="_blank"><button class="button secundary">Comprar</button></a><?php } 
 					?>
