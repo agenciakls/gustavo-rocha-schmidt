@@ -5,5 +5,30 @@
             font-size: 1.5em;
             color: $corPrincipal;
         }
+        .box-event {
+            padding: 15px;
+            border: solid 1px $corSecundaria;
+            font-size: 1em;
+            color: $corSecundaria;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            .content-address {
+                font-size: 0.8em;
+            }
+            &.inverted {
+                background-color: $corSecundaria;
+                color: $corBranco;
+            }
+            &.spacials {
+                font-size: 1.2em;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+        }
     }
 }
