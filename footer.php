@@ -51,6 +51,16 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/splide.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/vertical-timeline.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.19"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+	<script>
+			var image = document.getElementsByClassName('img-banner-full');
+			new simpleParallax(image, {
+				orientation: 'down',
+				scale: 1.6,
+				transition: 'cubic-bezier(0,0,0,1)',
+				maxTransition: 99,
+			});
+	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>
