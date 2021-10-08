@@ -36,3 +36,41 @@ function postTypeLivros () {
     add_post_type_support( 'livros', 'wps_subtitle' );
 }
 add_action('init', 'postTypeLivros');
+
+function livrosTax() {
+    $label = array(
+        'name' => 'Categorias',
+        'singular_name' => 'Categoria',
+        'menu_name' => 'Categoria',
+        'all_items' => 'Todas as Categorias',
+        'edit_item' => 'Editar Categoria',
+        'view_item' => 'Visualizar',
+        'update_item' => 'Atualizar',
+        'add_new_item' => 'Adicionar Nova',
+        'new_item_name' => 'Novo Item',
+        'parent_item' => 'Categoria Pai',
+        'parent_item_colon' => '',
+        'search_items' => '',
+        'popular_items' => '',
+        'separate_items_with_commas' => '',
+        'add_or_remove_items' => '',
+        'choose_from_most_used' => '',
+        'not_found' => ''
+    );
+    register_taxonomy(
+        'livros',
+        'livros',
+        array(
+            'labels' => $label,
+            'public' => true,
+            'show_ui' => true,
+            'show_in_menu' => true,
+            'hierarchical' => true,
+            'show_admin_column' => true,
+            'show_in_rest' => true,
+            'query_var' => true,
+            'rewrite' => array('slug' => 'livros')
+        )
+    );
+}
+add_action('init',  'livrosTax');

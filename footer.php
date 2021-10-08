@@ -1,4 +1,3 @@
-	<?php echo get_template_part('templates/ads', 'footer'); ?>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -20,23 +19,6 @@
 		</div>
 	</footer>
 	<?php
-	if (is_front_page()) {
-		?>
-		<script>
-		$(document).ready(function () {
-            function gtag_report_conversion() {
-                gtag('create', 'AW-824599583', 'auto');
-                gtag('event', 'conversion', { 'send_to': 'AW-824599583/cNbWCMOUzcQBEJ_ImYkD' });
-                console.log('Ads');
-            }
-            function callConversion() {
-                gtag_report_conversion();
-            }
-            $(".form-area").on('submit', function() { callConversion() });
-        });
-		</script>
-		<?php
-	}
 	if (!isset($_COOKIE['cookie_accepted'])) {
 		?>
 		<section id="cookie-alert" class="active">
@@ -57,24 +39,18 @@
 	<div class="box-back-top" id="box-back-top">
 		<i class="fas fa-arrow-up"></i>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
-				keyboard: false
-			})
-			$('#search-action').on('click', function () {
-				myModal.show()
-			});
+			var myModal = new bootstrap.Modal(document.getElementById('searchModal'), { keyboard: false });
+			$('#search-action').on('click', function () {myModal.show() });
 			
 		});
 	</script>
 	<script src="<?php bloginfo('template_url'); ?>/js/splide.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/vertical-timeline.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.19"></script>
-	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>

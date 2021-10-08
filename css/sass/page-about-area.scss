@@ -4,6 +4,7 @@
         .accordion-header {
             .accordion-button {
                 padding: 0px;
+                color: $corPrincipal;
                 .area-icon {
                     background: $corPrincipal;
                     padding: 6px;
@@ -21,6 +22,10 @@
                 }
                 &::after {
                     margin: 15px 15px 15px auto;
+                }
+                &:not(.collapsed) {
+                    background-color: #e5e5e5;
+                    color: $corPrincipal;
                 }
             }
         }

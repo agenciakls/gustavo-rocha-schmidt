@@ -9,47 +9,49 @@
                     <hr class="line text-center">
                 </div>
                 <div class="splide" id="livros">
-                    <div class="splide__track">
-                        <div class="splide__list">
+                <?php 
+                    $argsArtigos = array(
+                        'post_type' => 'livros',
+                        'posts_per_page' => 4
+                    );
+                    $queryArtigos = new WP_QUery($argsArtigos);
+                    if ($queryArtigos->have_posts()) {
+                        ?>
+                        <div class="splide__track">
+                            <div class="splide__list">
+                        <?php
+                        while ($queryArtigos->have_posts()) {
+                            $queryArtigos->the_post();
+                            ?>
                             <div class="splide__slide">
                                 
                                 <div class="content-livros">
                                     <div class="row d-flex">
                                         <div class="col-md-7">
-                                            <h4>Comentários à Lei de Arbitragem</h4>
-                                            <p class="my-3">O livro Comentários à Lei de Arbitragem aborda não apenas o regramento aplicável ao instituto no Brasil, mas também examina, cuidadosamente, as alterações promovidas pela Reforma da Lei, de 2015. Faz isso com rigor metodológico e profundidade teórica, sem descuidar da jurisprudência dos tribunais, em especial daquilo que vem sendo decidido pelo Superior Tribunal de Justiça. […]</p>
+                                            <h4><?php echo get_the_title(); ?></h4>
+                                            <p class="my-3"><?php echo get_the_excerpt(); ?></p>
                                             <div class="d-flex my-3">
-                                                <button class="button secundary">Comprar</button>
-                                                <button class="button secundary button-out">Ler Mais</button>
+                                                <a href="<?php echo get_permalink(); ?>"><button class="button secundary">Comprar</button></a>
+                                                <a href="<?php echo get_permalink(); ?>"><button class="button secundary button-out">Ler Mais</button></a>
                                             </div>
                                             
                                         </div>
                                         <div class="col-md-5">
-                                            <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/produto.png" alt="">
+                                        <?php 
+                                        if (has_post_thumbnail()) {
+                                            ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" class="img-fluid" alt=""><?php
+                                        }
+                                        ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="splide__slide">
-                                
-                                <div class="content-livros">
-                                    <div class="row d-flex">
-                                        <div class="col-md-7">
-                                            <h4>Comentários à Lei de Arbitragem</h4>
-                                            <p class="my-3">O livro Comentários à Lei de Arbitragem aborda não apenas o regramento aplicável ao instituto no Brasil, mas também examina, cuidadosamente, as alterações promovidas pela Reforma da Lei, de 2015. Faz isso com rigor metodológico e profundidade teórica, sem descuidar da jurisprudência dos tribunais, em especial daquilo que vem sendo decidido pelo Superior Tribunal de Justiça. […]</p>
-                                            <div class="d-flex my-3">
-                                                <button class="button secundary">Comprar</button>
-                                                <button class="button secundary button-out">Ler Mais</button>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="col-md-5">
-                                            <img src="<?php echo get_bloginfo('template_url'); ?>/img/exemplo/produto.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <?php
+                        }
+                        ?></div></div><?php 
+                    }
+                    ?>
+                    
                     </div>
                     <a href="<?php echo get_post_type_archive_link('livros'); ?>">
                         <div class="ver-todos">

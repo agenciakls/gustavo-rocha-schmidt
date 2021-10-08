@@ -14,16 +14,18 @@
 										?>
 										<div class="text">
 											<h2><?php the_title(); ?></h2>
-											<h3><i class="far fa-clock"></i> <?php echo get_the_date(); ?> | <small><i class="fas fa-tag"></i> <?php 
+											<h3><i class="far fa-clock"></i> <?php echo get_the_date(); ?> | <?php 
 											$postType = get_post_type();
-											$terms = get_the_terms( $post, $postType );
-											$listArray = array();
-											foreach ($terms as $term) {
-												$singleTerm = get_term_link($term->term_id, $postType);
-												$listArray[] = $term->name;
+											if ($postType != 'livros') {
+												$terms = get_the_terms( $post, $postType );
+												$listArray = array();
+												foreach ($terms as $term) {
+													$singleTerm = get_term_link($term->term_id, $postType);
+													$listArray[] = $term->name;
+												}
+												?><small><i class="fas fa-tag"></i><?php echo implode(' / ', $listArray) ?></small></h3><?php
 											}
-											echo implode(' / ', $listArray);
-											?></small></h3>
+											?>
 											<p><?php echo get_the_excerpt(); ?></p>
 											<!-- <span class="view-more">Ver Mais </span> -->
 										</div>

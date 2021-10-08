@@ -77,7 +77,6 @@ $(document).ready(function () {
 		}
 	});
 
-
 	var $doc = $('html, body');
 	$('.link-app').click(function () {
 		var tamanhoHeader = $("header").height();

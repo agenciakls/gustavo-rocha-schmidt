@@ -15,7 +15,7 @@
                 <div class="accordion my-3" id="accordion-1">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading1">
-                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordion1">
                                 <div class="area-icon">
                                     <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-arbitragem.svg" class="img-icon" alt="">
                                 </div>    
@@ -32,7 +32,7 @@
                 <div class="accordion my-3" id="accordion-2">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading2">
-                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="true" aria-controls="accordion2">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="true" aria-controls="accordion2">
                                 <div class="area-icon">
                                     <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-contencioso-civel.svg" class="img-icon" alt="">
                                 </div>    
@@ -49,7 +49,7 @@
                 <div class="accordion my-3" id="accordion-3">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading3">
-                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="true" aria-controls="accordion3">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion3" aria-expanded="true" aria-controls="accordion3">
                                 <div class="area-icon">
                                     <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-contencioso-empresarial.svg" class="img-icon" alt="">
                                 </div>    
@@ -66,7 +66,7 @@
                 <div class="accordion my-3" id="accordion-4">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading4">
-                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="true" aria-controls="accordion4">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion4" aria-expanded="true" aria-controls="accordion4">
                                 <div class="area-icon">
                                     <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-direito-administrativo.svg" class="img-icon" alt="">
                                 </div>    
@@ -83,7 +83,7 @@
                 <div class="accordion my-3" id="accordion-5">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading5">
-                            <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="true" aria-controls="accordion5">
+                            <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion5" aria-expanded="true" aria-controls="accordion5">
                                 <div class="area-icon">
                                     <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/area-direito-constitucional.svg" class="img-icon" alt="">
                                 </div>    
@@ -97,7 +97,13 @@
                         </div>
                     </div>
                 </div>
+
+
+                
             </div>
+            
+
+
         </div>
     </div>
 </div>

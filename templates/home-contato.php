@@ -1,4 +1,4 @@
-<div class="home-contato section-home">
+<div class="home-contato section-home" id="contato">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6 col-offset-3 text-center">

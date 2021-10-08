@@ -20,4 +20,3 @@
 <body>
 	<?php get_template_part('templates/part', 'header'); ?>
 	<?php  if (!is_front_page()) { get_template_part('templates/header', 'title'); } ?>
-    <script data-ad-client="ca-pub-1394732508519425" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

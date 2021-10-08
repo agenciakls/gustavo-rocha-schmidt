@@ -18,7 +18,8 @@
             'taxonomy' => $postType,
             'hide_empty' => false,
         ) );
-                
+        $count = (is_array($terms)) ? count($terms) : 0; 
+        if (has_term($postType, $postType) && $count > 0) {
             ?>
             <div class="part-categorias">
                 <h3>Filtrar por categorias</h3>
@@ -32,7 +33,7 @@
                 </div>
             </div>
             <?php
-                
+        }   
 
 
         $postType = get_post_type();
@@ -40,6 +41,8 @@
             'taxonomy' => $postType . 'tag',
             'hide_empty' => false,
         ) );
+        $count = (is_array($terms)) ? count($terms) : 0; 
+        if (has_term($postType, $postType) && $count > 0) {
             ?>
             <div class="part-tags">
                 <h3>Tags</h3>
@@ -53,6 +56,7 @@
                 </div>
             </div>
             <?php
+        }
                 
                
     }

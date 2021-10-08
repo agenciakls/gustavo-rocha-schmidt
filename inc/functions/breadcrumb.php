@@ -66,11 +66,16 @@ function wp_custom_breadcrumbs() {
                 $slug = $post_type->rewrite;
                 $type = get_post_type( $post->ID );
                 $categoriaSlug = get_object_taxonomies( $type );
+                
+                $post_type = get_post_type_object(get_post_type());
+            echo '<a href="' . get_post_type_archive_link(get_post_type()) . '">' . $post_type->labels->name . '</a> ' . $delimiter . ' ';
                 // echo $type;
+                /*
                 $categoria = get_the_terms($post->ID, $categoriaSlug[0]);
                 $categoriaLink = get_term_link($categoria[0]->term_id, $categoriaSlug[0]);
                 echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->name . '</a>';
-                if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
+                */
+                if ($showCurrent == 1) echo ' ' . $before . get_the_title() . $after;
 
             } else {
 
