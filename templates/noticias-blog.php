@@ -17,10 +17,10 @@
 											<h3><i class="far fa-clock"></i> <?php echo get_the_date(); ?><?php 
 											$postType = get_post_type();
 											if ($postType != 'livros') {
-												$terms = get_the_terms( $post, $postType );
+												$terms = get_the_terms( $post, $postType . 'cat' );
 												$listArray = array();
 												foreach ($terms as $term) {
-													$singleTerm = get_term_link($term->term_id, $postType);
+													$singleTerm = get_term_link($term->term_id, $postType . 'cat');
 													$listArray[] = $term->name;
 												}
 												?> | <small><i class="fas fa-tag"></i><?php echo implode(' / ', $listArray) ?></small></h3><?php

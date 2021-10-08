@@ -58,7 +58,7 @@ function livrosTax() {
         'not_found' => ''
     );
     register_taxonomy(
-        'livros',
+        'livroscat',
         'livros',
         array(
             'labels' => $label,
@@ -69,7 +69,7 @@ function livrosTax() {
             'show_admin_column' => true,
             'show_in_rest' => true,
             'query_var' => true,
-            'rewrite' => array('slug' => 'livros')
+            'rewrite' => array('slug' => 'categoria-livros')
         )
     );
 }

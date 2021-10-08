@@ -13,9 +13,9 @@ get_header();
 					$listArray = array();
 					
 					$count = (is_array($terms)) ? count($terms) : 0; 
-					if (has_term($postType, $postType) && $count > 0) {
+					if (has_term($postType, $postType . 'cat') && $count > 0) {
 						foreach ($terms as $term) {
-							$singleTerm = get_term_link($term->term_id, $postType);
+							$singleTerm = get_term_link($term->term_id, $postType . 'cat');
 							$listArray[] = $term->name;
 						}
 						?>| <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray); ?></small></p><?php

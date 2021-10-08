@@ -59,7 +59,7 @@ function aulasTax() {
         'not_found' => ''
     );
     register_taxonomy(
-        'aulas',
+        'aulascat',
         'aulas',
         array(
             'labels' => $label,
@@ -70,7 +70,7 @@ function aulasTax() {
             'show_admin_column' => true,
             'show_in_rest' => true,
             'query_var' => true,
-            'rewrite' => array('slug' => 'aulas')
+            'rewrite' => array('slug' => 'categoria-aulas')
         )
     );
 }

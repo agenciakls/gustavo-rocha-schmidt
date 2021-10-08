@@ -15,18 +15,18 @@
         
         $postType = get_post_type();
         $terms = get_terms( array(
-            'taxonomy' => $postType,
+            'taxonomy' => $postType . 'cat',
             'hide_empty' => false,
         ) );
         $count = (is_array($terms)) ? count($terms) : 0; 
-        if (has_term($postType, $postType) && $count > 0) {
+        if (has_term($postType, $postType . 'cat') && $count > 0) {
             ?>
             <div class="part-categorias">
                 <h3>Filtrar por categorias</h3>
                 <div class="content-categorias">
                     <?php
                     foreach ($terms as $term) {
-                        $singleTerm = get_term_link($term->term_id, $postType);
+                        $singleTerm = get_term_link($term->term_id, $postType . 'cat');
                         ?><a href="<?php echo $singleTerm; ?>"><div class="single-categorias"><i class="fas fa-chevron-right"></i> <?php echo $term->name; ?></div></a><?php
                     }
                     ?>
@@ -42,7 +42,7 @@
             'hide_empty' => false,
         ) );
         $count = (is_array($terms)) ? count($terms) : 0; 
-        if (has_term($postType, $postType) && $count > 0) {
+        if (has_term($postType, $postType . 'tag') && $count > 0) {
             ?>
             <div class="part-tags">
                 <h3>Tags</h3>

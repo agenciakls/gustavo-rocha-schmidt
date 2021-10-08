@@ -58,7 +58,7 @@ function artigosTax() {
         'not_found' => ''
     );
     register_taxonomy(
-        'artigos',
+        'artigoscat',
         'artigos',
         array(
             'labels' => $label,
@@ -69,7 +69,7 @@ function artigosTax() {
             'show_admin_column' => true,
             'show_in_rest' => true,
             'query_var' => true,
-            'rewrite' => array('slug' => 'artigos')
+            'rewrite' => array('slug' => 'categoria-artigos')
         )
     );
 }

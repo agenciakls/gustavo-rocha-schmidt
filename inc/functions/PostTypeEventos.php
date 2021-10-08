@@ -59,7 +59,7 @@ function eventosTax() {
         'not_found' => ''
     );
     register_taxonomy(
-        'eventos',
+        'eventoscat',
         'eventos',
         array(
             'labels' => $label,
@@ -70,7 +70,7 @@ function eventosTax() {
             'show_admin_column' => true,
             'show_in_rest' => true,
             'query_var' => true,
-            'rewrite' => array('slug' => 'eventos')
+            'rewrite' => array('slug' => 'categoria-eventos')
         )
     );
 }
