@@ -10,11 +10,11 @@
 								<a href="<?php the_permalink(); ?>">
 									<div class="content">
 										<?php
-										if (has_post_thumbnail()) { ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large') ?>" class="post-thumbnail img-fluid w-100" alt=""><?php }
+										if (has_post_thumbnail()) { ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large') ?>" class="post-thumbnail img-fluid w-100 my-3" alt=""><?php }
 										?>
 										<div class="text">
 											<h2><?php the_title(); ?></h2>
-											<h3><?php echo get_the_date(); ?><?php 
+											<h3><i class="far fa-clock"></i> <?php echo get_the_date(); ?><?php 
 											$postType = get_post_type();
 											$terms = get_the_terms( $post, $postType . 'cat' );
 											$count = (is_array($terms)) ? count($terms) : 0; 
@@ -25,7 +25,7 @@
 													$singleTerm = get_term_link($term->term_id, $postType . 'cat');
 													$listArray[] = $term->name;
 												}
-												?><i class="far fa-clock"></i>  | <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray) ?></small><?php
+												?>  | <small><i class="fas fa-tag"></i> <?php echo implode(' / ', $listArray) ?></small><?php
 											}
 											?>
 											</h3>

@@ -1,7 +1,7 @@
 <div class="part-aside">
     <div class="part-search">
         <div class="content-search">
-            <h3>Pesquisar em Aulas e Palestras</h3>
+            <h3>Pesquisar</h3>
             <div class="form-search">
                 <form action="<?php echo get_bloginfo('home'); ?>" method="GET">
                     <input type="search" name="s" value="" placeholder="Digite sua pesquisa" class="form-control" />

@@ -71,3 +71,29 @@
         }
     }
 }
+@media screen and (max-width: $xsWidth) {
+    .part-aside {
+        .part-search {
+            .content-search {
+                h3 {
+                    font-size: 0.9em;
+                }
+            }
+        } 
+    }
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+    
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    
+}
+@media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
+
+}
+@media screen and (min-width: $xxlWidth) {
+    
+}

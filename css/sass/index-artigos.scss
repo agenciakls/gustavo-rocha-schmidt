@@ -49,16 +49,68 @@
 
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
-    
+    .home-artigos {
+        .lista-artigos {
+            .single-artigo {
+                padding: 15px;
+                .artigo-data {
+                    font-size: 0.8em;
+                }
+                .artigo-titulo {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
 
+    .home-artigos {
+        .lista-artigos {
+            .single-artigo {
+                padding: 15px;
+                .artigo-data {
+                    font-size: 0.8em;
+                }
+                .artigo-titulo {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
     
+    .home-artigos {
+        .lista-artigos {
+            .single-artigo {
+                padding: 15px;
+                .artigo-data {
+                    font-size: 1.1em;
+                }
+                .artigo-titulo {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
 
+    
+    .home-artigos {
+        .lista-artigos {
+            .single-artigo {
+                padding: 15px;
+                .artigo-data {
+                    font-size: 1.3em;
+                }
+                .artigo-titulo {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: $xxlWidth) {
     
