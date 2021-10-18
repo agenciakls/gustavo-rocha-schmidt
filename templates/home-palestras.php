@@ -43,7 +43,7 @@
                                     <div class="single-palestra">
                                         <?php 
                                         if (has_post_thumbnail()) {
-                                            ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" alt=""><?php
+                                            ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" class="img-fluid w-100" alt=""><?php
                                         }
                                         ?>
                                         <h4><?php echo get_the_title(); ?></h4>

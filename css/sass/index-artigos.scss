@@ -31,3 +31,29 @@
         }
     }
 }
+@media screen and (max-width: $xsWidth) {
+    .home-artigos {
+        .lista-artigos {
+            margin: 0px 0px;
+            .single-artigo {
+                margin: 10px 0px;
+            }
+        }
+    }
+
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    
+}
+@media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
+
+}
+@media screen and (min-width: $xxlWidth) {
+    
+}

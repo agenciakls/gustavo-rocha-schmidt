@@ -12,9 +12,7 @@
                         <a href="<?php echo get_post_type_archive_link('artigos'); ?>">
                             <div class="ver-todos">
                                 <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/feather-arrow-right.svg" class="icon-todos" alt="" />
-                                <span class="vertodos">
-                                    VER TODOS
-                                </span>
+                                <span class="vertodos">VER TODOS</span>
                             </div>
                         </a>
                     </div>
@@ -36,16 +34,23 @@
                                 <a href="<?php echo get_permalink(); ?>">
                                     <div class="single-artigo">
                                         <div class="artigo-data"><?php echo get_the_date(); ?></div>
-                                        <div class="artigo-categoria"><img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/folder.svg" /> <?php 
+                                        <?php 
                                         $postType = get_post_type();
                                         $terms = get_the_terms( $post, $postType );
                                         $listArray = array();
-                                        foreach ($terms as $term) {
-                                            $singleTerm = get_term_link($term->term_id, $postType);
-                                            $listArray[] = $term->name;
+                                        if ($terms->count > 0) {
+                                            foreach ($terms as $term) {
+                                                $singleTerm = get_term_link($term->term_id, $postType);
+                                                $listArray[] = $term->name;
+                                            }
+                                            ?>
+                                            <div class="artigo-categoria">
+                                                <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/folder.svg" />
+                                                <?php echo implode(' / ', $listArray); ?>
+                                            </div>
+                                            <?php
                                         }
-                                        echo implode(' / ', $listArray);
-                                        ?></div>
+                                        ?>
                                         <h4 class="artigo-titulo">
                                             <?php echo get_the_title(); ?>
                                         </h4>

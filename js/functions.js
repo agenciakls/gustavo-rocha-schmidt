@@ -24,16 +24,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}
 });
 $(document).ready(function () {
-	$("#validate-continue").on('click', function () {
-		$.post(search_object.location, {
-			action: 'cookie',
-			make: 'save'
-		}, function (storeReturn) {
-			$("#cookie-alert").remove();
-		});
-		return false;
-	});
-
 	function toggleMenu() {
 		$(".hamburger").toggleClass('is-active');
 		$("nav").toggleClass('active');

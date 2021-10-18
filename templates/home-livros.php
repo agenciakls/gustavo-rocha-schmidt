@@ -29,7 +29,7 @@
                                         <div class="col-md-7">
                                             <h4><?php echo get_the_title(); ?></h4>
                                             <p class="my-3"><?php echo get_the_excerpt(); ?></p>
-                                            <div class="d-flex my-3">
+                                            <div class="d-flex my-3 flex-wrap">
                                                 <?php if (get_field('link')) { ?><a href="<?php echo get_field('link'); ?>" target="_blank"><button class="button secundary">Comprar</button></a><?php } ?>
                                                 <a href="<?php echo get_permalink(); ?>"><button class="button secundary button-out">Ler Mais</button></a>
                                             </div>

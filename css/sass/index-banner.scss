@@ -59,8 +59,7 @@
 	}
 	.home-banner {
 		width: 100%;
-		max-height: 370px;
-		min-height: 230px;
+		height: 100vh;
 		overflow: hidden;
 		background-size: cover;
 		background-position: center;
@@ -106,9 +105,16 @@
 			position: absolute;
 			top: 0px;
 			left: 0px;
-			.img-banner-full {
-				width: 100%;
-				position: relative;
+			.simpleParallax {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.img-banner-full {
+					// width: 100%;
+					margin: 0px auto;
+					display: flex;
+					position: relative;
+				}
 			}
 		}
 	}
@@ -119,7 +125,15 @@
 			display: none;
 		}
 		.home-banner {
-			min-height: 140px;
+			height: 80vh;
+			min-height: 620px;
+			.area-img-full {
+				.simpleParallax {
+					.img-banner-full {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }
@@ -129,12 +143,20 @@
 			display: none;
 		}
 		.home-banner {
+			height: 60vh;
 			min-height: 240px;
+			.area-img-full {
+				.simpleParallax {
+					.img-banner-full {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
-	.home-topo {	
+	.home-topo {
 		.home-banner-bar {
 			ul {
 				li {

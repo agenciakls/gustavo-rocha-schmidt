@@ -60,3 +60,44 @@
         }
     }
 } 
+@media screen and (max-width: $xsWidth) {
+    .home-calendario {
+        .lista-calendario {
+            .single-calendario {
+                .content-text {
+                    .buttons-calendario {
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+                } 
+            }
+        }
+    } 
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    
+    .home-calendario {
+        .lista-calendario {
+            .single-calendario {
+                .content-text {
+                    .buttons-calendario {
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+                } 
+            }
+        }
+    } 
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+    
+}
+@media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
+
+}
+@media screen and (min-width: $xxlWidth) {
+    
+}

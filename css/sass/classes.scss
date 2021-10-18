@@ -76,7 +76,7 @@ p {
 }
 /* ELEMENTOS */
 ul { list-style-type: none; padding-inline-start: 0px; }
-img { max-width: 100%; }
+// img { max-width: 100%; }
 
 /* FORMULÁRIOS */
 .input-contato, .area-contato, input[type=text], input[type=search], input[type=email], input[type=tel], select, textarea {
@@ -280,9 +280,23 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 @media screen and (max-width: $xsWidth) {
     h1 { font-size: 30px; }
+    .ver-todos { float: left; }
+    .section-home {
+        padding: 40px 0px !important;
+        .heading-title {
+            margin-bottom: 0px;
+        }
+    }
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
-
+    h1 { font-size: 30px; }
+    .ver-todos { float: left; }
+    .section-home {
+        padding: 40px 0px !important;
+        .heading-title {
+            margin-bottom: 0px;
+        }
+    }
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
 
@@ -290,6 +304,9 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
     
 }
-@media screen and (min-width: $xlWidth) {
+@media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
+
+}
+@media screen and (min-width: $xxlWidth) {
     
 }

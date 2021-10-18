@@ -40,17 +40,39 @@ footer {
     border: solid 1px $corPrincipalEscura;
 }
 @media screen and (max-width: $xsWidth) {
-
+	footer {
+		.rodape-copyright {
+			text-align: center;
+		}
+		.rodape-redes-sociais {
+			padding: 15px 0px;
+			display: flex;
+			justify-content: center;
+		}
+	}
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	footer {
+		.rodape-copyright {
+			text-align: center;
+		}
+		.rodape-redes-sociais {
+			padding: 15px 0px;
+			display: flex;
+			justify-content: center;
+		}
+	}
 
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
-	
+
 }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
-	
+    
 }
-@media screen and (min-width: $xlWidth) {
-	
+@media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
+
+}
+@media screen and (min-width: $xxlWidth) {
+    
 }

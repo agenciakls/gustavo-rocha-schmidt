@@ -186,12 +186,9 @@ section.content-title {
 			}
 			.logo {
 				img {
-					height: 50px;
-					margin: 17px 8px;
+					height: 25px;
+					margin: 17px 2px;
 				}
-			}
-			.header-search {
-				display: none;
 			}
 		}
 	}
@@ -200,6 +197,9 @@ section.content-title {
 	    	font-size: 23px;
 	    	text-align: center;
 	    }
+		.crumbs {
+			text-align: center;
+		}
 	}
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
@@ -222,6 +222,9 @@ section.content-title {
 	    	font-size: 32px;
 	    	text-align: center;
 	    }
+		.crumbs {
+			text-align: center;
+		}
 	}
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
