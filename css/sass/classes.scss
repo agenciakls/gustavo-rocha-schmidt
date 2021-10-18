@@ -279,8 +279,18 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     color: #ccc;
 }
 @media screen and (max-width: $xsWidth) {
+    h2 { font-size: 1.3em;  }
+    h3 {
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
     h1 { font-size: 30px; }
-    .ver-todos { float: left; }
+    // .ver-todos { float: left; }
     .section-home {
         padding: 40px 0px !important;
         .heading-title {
@@ -289,8 +299,18 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     }
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+    h2 { font-size: 1.4em;  }
+    h3 {
+        font-size: 1.4em;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
+    }
     h1 { font-size: 30px; }
-    .ver-todos { float: left; }
+    // .ver-todos { float: left; }
     .section-home {
         padding: 40px 0px !important;
         .heading-title {

@@ -3,12 +3,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-title row d-flex align-items-end">
-                    <div class="col-md-10">
+                    <div class="col-6 col-md-10">
                         <div class="pre-title">FIQUE POR DENTRO DOS</div>
                         <h3 class="title-artigos">Artigos, Publicações e Análises</h3>
                         <hr class="line">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <a href="<?php echo get_post_type_archive_link('artigos'); ?>">
                             <div class="ver-todos">
                                 <img src="<?php echo get_bloginfo('template_url'); ?>/img/icons/feather-arrow-right.svg" class="icon-todos" alt="" />

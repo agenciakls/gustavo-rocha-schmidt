@@ -35,7 +35,7 @@
 		</section>
 		<script>
 			$("#validate-continue").on('click', function () { 
-				$.post(s.location, {
+				$.post(search_object.location, {
 					action: 'cookie',
 					make: 'save'
 				}, function (storeReturn) {
@@ -51,6 +51,13 @@
 		<i class="fas fa-arrow-up"></i>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var myModal = new bootstrap.Modal(document.getElementById('searchModal'), { keyboard: false });
+			$('#search-action').on('click', function () {myModal.show() });
+
+		});
+	</script>
 	<script src="<?php bloginfo('template_url'); ?>/js/splide.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/vertical-timeline.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.19"></script>

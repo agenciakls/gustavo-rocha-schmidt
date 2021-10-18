@@ -8,7 +8,6 @@
     .splide__pagination {
         position: relative;
         width: auto;
-        bottom: 190px !important;
         float: left;
         left: 0px;
         transform: translateX(0%) !important;
@@ -79,17 +78,17 @@
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
     .home-livros {
         .splide__pagination {
-            top: 30px !important;
+            top: -57px !important;
         }
         .ver-todos {
-            top: 470px;
+            top: 480px;
         }
     }
 }
 @media screen and (min-width: $xlWidth) and (max-width: $xxlWidth) {
     .home-livros {
         .splide__pagination {
-            top: 35px !important;
+            top: -175px !important;
         }
         .ver-todos {
             top: 445px;
@@ -99,7 +98,7 @@
 @media screen and (min-width: $xxlWidth) {
     .home-livros {
         .splide__pagination {
-            top: 35px !important;
+            top: -259px !important;
         }
         .ver-todos {
             top: 442px;

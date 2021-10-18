@@ -42,7 +42,7 @@
                             $hora = strftime("%k", strtotime($dataHorario));
                             ?>
                                 <div class="single-calendario row">
-                                    <div class="col-md-2 col-date">
+                                    <div class="col-6 col-md-3 col-lg-2 col-date">
                                         <div class="date-day"><?php echo $dia; ?></div>
                                         <div class="date-month"><?php echo $mes; ?></div>
                                         <div class="date-year"><?php echo $ano; ?></div>
@@ -51,14 +51,14 @@
                                             <i class="far fa-clock"></i> <?php echo $hora; ?>h
                                         </div>
                                     </div>
-                                    <div class="col-md-2 thumb-calendario">
+                                    <div class="col-6 col-md-3 col-lg-2 thumb-calendario">
                                     <?php 
                                     if (has_post_thumbnail()) {
                                         ?><div class="img-thumb" style="background-image: url('<?php echo get_the_post_thumbnail_url($post, 'full'); ?>');"></div><?php
                                     }
                                     ?>
                                     </div>
-                                    <div class="col-md-8 content-text">
+                                    <div class="col-md-6 col-lg-8 content-text">
                                         <h4><?php echo get_the_title(); ?></h4>
                                         <?php the_excerpt(); ?>
                                         <div class="buttons-calendario">
@@ -71,7 +71,9 @@
                         }
                     }
                     ?>
-                    <a href="<?php echo get_post_type_archive_link('eventos'); ?>"><button class="col-md-12 button secundary my-5 py-3 button-out">VER TODOS</button></a>
+                    <div class="d-flex justify-content-center row">
+                        <a href="<?php echo get_post_type_archive_link('eventos'); ?>"><button class="col-12 button secundary my-3 py-3 button-out">VER TODOS</button></a>
+                    </div>
                 </div>
             </div>
         </div>

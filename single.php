@@ -38,7 +38,7 @@ get_header();
 									$hora = strftime("%k", strtotime($dataHorario));
 									?>
 										<div class="detail-eventos my-3 d-flex row align-items-stretch">
-											<div class="col-md-2 col-date">
+											<div class="col-6 col-md-2 my-3 col-date">
 												<div class="box-event">
 													<div class="date-day"><?php echo $dia; ?></div>
 													<div class="date-month"><?php 
@@ -62,14 +62,14 @@ get_header();
 													<div class="date-year"><?php echo $ano; ?></div>
 												</div>
 											</div>
-											<div class="col-md-2">
+											<div class="col-6 col-md-2 my-3">
 												<div class="box-event">
 													<div class="date-hour">
 														<i class="far fa-clock"></i> <?php echo $hora; ?>h
 													</div>
 												</div>
 											</div>
-											<div class="col-md-4">
+											<div class="col-12 col-md-4 my-3">
 												<div class="box-event">
 													<div class="content-address">
 														<?php echo get_field('endereco'); ?>
@@ -77,7 +77,7 @@ get_header();
 												</div>
 												
 											</div>
-											<div class="col-md-4">
+											<div class="col-md-4 my-3">
 												<?php if (get_field('link')) { ?><a href="<?php echo get_field('link'); ?>" target="_blank"><div class="box-event inverted spacials">Faça sua inscrição</div></a><?php } ?>
 											</div>
 										</div>

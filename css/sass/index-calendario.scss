@@ -55,6 +55,7 @@
                 .buttons-calendario {
                     display: flex;
                     justify-content: flex-end;
+                    flex-wrap: wrap;
                 }
             } 
         }
@@ -65,9 +66,11 @@
         .lista-calendario {
             .single-calendario {
                 .content-text {
+                    h4 {
+                        font-size: 1em;
+                    }
                     .buttons-calendario {
                         justify-content: center;
-                        flex-wrap: wrap;
                     }
                 } 
             }
@@ -80,9 +83,11 @@
         .lista-calendario {
             .single-calendario {
                 .content-text {
+                    h4 {
+                        font-size: 1.1em;
+                    }
                     .buttons-calendario {
                         justify-content: center;
-                        flex-wrap: wrap;
                     }
                 } 
             }
@@ -91,6 +96,18 @@
 }
 @media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
 
+    
+    .home-calendario {
+        .lista-calendario {
+            .single-calendario {
+                .content-text {
+                    h4 {
+                        font-size: 1.1em;
+                    }
+                } 
+            }
+        }
+    } 
 }
 @media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
     
