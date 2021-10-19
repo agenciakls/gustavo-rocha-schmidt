@@ -22,6 +22,11 @@
             }
         }
     }
+    .img-livros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .ver-todos {
         padding: 7px 20px;
         display: inline-block;
@@ -48,6 +53,9 @@
             position: relative;
             top: -2px;
         }
+        .text-livros {
+            text-align: center;
+        }
     }
 }
 @media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
@@ -62,6 +70,9 @@
         .ver-todos {
             position: relative;
             top: -10px;
+        }
+        .text-livros {
+            text-align: center;
         }
     }
 }

@@ -25,8 +25,15 @@
                             ?>
                             <div class="splide__slide">
                                 <div class="content-livros">
-                                    <div class="row d-flex">
-                                        <div class="col-md-7">
+                                    <div class="row d-flex flex-row-reverse">
+                                        <div class="col-md-5 img-livros">
+                                        <?php 
+                                        if (has_post_thumbnail()) {
+                                            ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" class="img-fluid" alt=""><?php
+                                        }
+                                        ?>
+                                        </div>
+                                        <div class="col-md-7 text-livros">
                                             <h4><?php echo get_the_title(); ?></h4>
                                             <p class="my-3"><?php echo get_the_excerpt(); ?></p>
                                             <div class="d-flex my-3 flex-wrap">
@@ -34,13 +41,6 @@
                                                 <a href="<?php echo get_permalink(); ?>"><button class="button secundary button-out">Ler Mais</button></a>
                                             </div>
                                             
-                                        </div>
-                                        <div class="col-md-5">
-                                        <?php 
-                                        if (has_post_thumbnail()) {
-                                            ?><img src="<?php echo get_the_post_thumbnail_url($post, 'medium_large'); ?>" class="img-fluid" alt=""><?php
-                                        }
-                                        ?>
                                         </div>
                                     </div>
                                 </div>
