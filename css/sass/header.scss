@@ -45,7 +45,7 @@ header {
 		background-color: $corBranco;
 		padding: 5px 0px;
 		width: 100%;
-		height: 100px;
+		height: 80px;
 		&.fixed {
 			background-color: $corBranco;
 			top: 0px;
@@ -109,7 +109,7 @@ header {
 				display: none;
 			}
 			.hamburger {
-				padding: 30px 10px;
+				padding: 20px 10px;
 			}
 		}
 		.separator {
@@ -134,11 +134,11 @@ header {
 		.header-buttons {
 			display: flex;
 			.header-search {
-				font-size: 2em;
+				font-size: 1.2em;
 				color: $corPrincipal;
 			}
 			.separator {
-				padding: 27px 10px;
+				padding: 17px 10px;
 				img {
 					height: 30px;
 				}
@@ -230,7 +230,7 @@ section.content-title {
 		.header-area {
 			.nav-button {
 				.hamburger {
-					padding: 30px 2px;
+					padding: 20px 2px;
 				}
 			}
 			.logo {

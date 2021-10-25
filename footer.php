@@ -50,17 +50,36 @@
 	<div class="box-back-top" id="box-back-top">
 		<i class="fas fa-arrow-up"></i>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			var myModal = new bootstrap.Modal(document.getElementById('searchModal'), { keyboard: false });
 			$('#search-action').on('click', function () {myModal.show() });
-
+			
+			
 		});
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/splide.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/vertical-timeline.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/functions.js?v=1.1.19"></script>
+	<script>
+		window.addEventListener('scroll', function(e) {
+			const target = document.querySelectorAll('.img-banner-full');
+			var index = 0, length = target.length;
+			for (index; index < length; index++) {
+				var pos = window.pageYOffset * target[index].dataset.rate;
+
+				if(target[index].dataset.direction === 'vertical') {
+					target[index].style.transform = 'translate3d(0px,'+pos+'px, 0px)';
+				} else {
+					var posX = window.pageYOffset * target[index].dataset.ratex;
+					var posY = window.pageYOffset * target[index].dataset.ratey;
+					
+					target[index].style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
+				}
+			}
+		});
+	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>
