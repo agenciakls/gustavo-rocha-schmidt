@@ -110,7 +110,12 @@
 				justify-content: center;
 				align-items: center;
 				.img-banner-full {
+					display: block;
 					width: 100%;
+					height: 100%;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
 					margin: 0px auto;
 					display: flex;
 					position: relative;
@@ -125,6 +130,7 @@
 			display: none;
 		}
 		.home-banner {
+			background-image: url('../img/webdoor-gustavo-mobile.jpg') !important;
 			height: 80vh;
 			min-height: 620px;
 			h3 {

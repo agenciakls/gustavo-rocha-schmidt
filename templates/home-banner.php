@@ -1,8 +1,8 @@
 <div class="home-section home-topo">
-	<div class="home-banner" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/banner-home.png');">
+	<div class="home-banner" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/webdoor-gustavo-web.jpg');">
 		
 		<div class="area-img-full">
-			<img class="img-banner-full" src="<?php echo get_bloginfo('template_url'); ?>/img/banner-home.png" alt="image">
+			<div class="img-banner-full" style="background-image: url('<?php echo get_bloginfo('template_url'); ?>/img/webdoor-gustavo-web.jpg')"></div>
 		</div>
 		<div class="container box-destaque">
 			<div class="row d-flex align-items-center">
